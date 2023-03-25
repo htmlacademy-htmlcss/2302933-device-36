@@ -26,24 +26,47 @@
               <a class="user-menu-link compare" href="#">Сравнить</a>
             </li>
             <li class="user-menu-item">
-              <button class="user-menu-link cart" type="button">
-                Корзина
-                <span class="cart-number">2</span>
-              </button>
+              <button class="user-menu-link cart" type="button">Корзина</button>
             </li>
           </ul>
         </div>
         <div class="page-header-bottom">
-          <div class="catalog">
-            <span class="catalog-title">Каталог товаров</span>
-            <button class="catalog-button" type="button">
+          <div class="catalog-menu">
+            <span class="catalog-menu-title">Каталог товаров</span>
+            <button class="catalog-menu-button" type="button">
               <span class="visually-hidden">Посмотреть каталог товаров.</span>
             </button>
+            <ul class="catalog-menu-list">
+              <li class="catalog-menu-item">
+                <a class="catalog-menu-link" href="#">Виртуальная реальность</a>
+              </li>
+              <li class="catalog-menu-item">
+                <a class="catalog-menu-link" href="#">Моноподы для cелфи</a>
+              </li>
+              <li class="catalog-menu-item">
+                <a class="catalog-menu-link" href="#">Экшн-камеры</a>
+              </li>
+              <li class="catalog-menu-item">
+                <a class="catalog-menu-link" href="#">Фитнес-браслеты</a>
+              </li>
+              <li class="catalog-menu-item">
+                <a class="catalog-menu-link" href="#">Умные часы</a>
+              </li>
+              <li class="catalog-menu-item">
+                <a class="catalog-menu-link" href="#">Квадрокоптеры</a>
+              </li>
+            </ul>
           </div>
           <ul class="navigation">
-            <li class="navigation-item">Доставка</li>
-            <li class="navigation-item">Гарантия</li>
-            <li class="navigation-item">Контакты</li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">Доставка</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">Гарантия</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">Контакты</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -68,16 +91,12 @@
               <p class="slider-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
               <a class="slider-link link" href="#">Подробнее</a>
             </div>
-            <ul class="slider-advantages">
-              <li class="slider-advantage">
-                <b class="slider-advantage-text">800 м</b>
-                <span class="slider-advantage-description">Дальность полета</span>
-              </li>
-              <li class="slider-advantage">
-                <b class="slider-advantage-text">50 м</b>
-                <span class="slider-advantage-description">Радиус поражения</span>
-              </li>
-            </ul>
+            <dl class="slider-advantages">
+              <dt class="slider-advantage">800 м</dt>
+              <dd class="slider-advantage-description">Дальность полета</dd>
+              <dt class="slider-advantage">50 м</dt>
+              <dd class="slider-advantage-description">Радиус поражения</dd>
+            </dl>
           </div>
           <div class="slider-buttons">
             <button class="slider-button" type="button">
@@ -178,7 +197,7 @@
           </div>
           <div class="subscription-bottom">
             <form class="subscription-form" action="#" method="post">
-              <input class="subscription-input" type="e-mail" name="subscription-input">
+              <input class="subscription-input" type="email" name="subscription-input">
               <button class="subscription-button" type="submit">Подписаться</button>
             </form>
             <span class="subscription-text">Это бесплатно</span>
@@ -222,7 +241,7 @@
         </div>
         <div class="right-column">
           <a class="footer-phone" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
-          <a class="company-link"></a>
+          <a class="company-link" href="#"></a>
         </div>
       </div>
     </footer>
