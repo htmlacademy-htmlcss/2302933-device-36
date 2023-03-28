@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Интернет-магазин Девайс.">
     <title>HTML Academy: Девайс</title>
   </head>
   <body>
@@ -12,7 +15,8 @@
             <img class="logo" src="#" alt="Логотип компании Device." >
           </a>
           <form class="search-form" method="get" action="#">
-            <input class="search-input" type="text" name="search-input" id="search-input">
+            <label class="visually-hidden" for="search-input">Поиск по сайту</label>
+            <input class="search-input" type="text" name="search-input" id="search-input" required>
             <button class="search-button" type="submit">Войти</button>
           </form>
           <ul class="user-menu">
@@ -77,18 +81,18 @@
           <h1 class="innert-header-title">Моноподы для селфи</h1>
           <ol class="breadcrumbs">
             <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link" href="index.html">Главная</a>
+              <a class="breadcrumbs-link" href="#">Главная</a>
             </li>
             <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link" href="catalog.html">Каталог товаров</a>
+              <a class="breadcrumbs-link" href="#">Каталог товаров</a>
             </li>
             <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link" href="#">Моноподы для селфи</a>
+              <a class="breadcrumbs-link" href="catalog.html">Моноподы для селфи</a>
             </li>
           </ol>
         </section>
         <section class="products">
-          <form class="products-filter" action="#" method="get">
+          <form class="products-filter" action="https://echo.htmlacademy.ru/" method="post">
             <h2 class="products-filter-title">фильтр:</h2>
             <fieldset class="products-filter-group">
               <legend class="product-fitler-title">Стоимость</legend>
@@ -98,31 +102,31 @@
               <ul class="product-filter-list">
                 <li class="product-filter-item">
                   <label class="control">
-                    <input class="control-input" type="checkbox" name="black" checked>
+                    <input class="control-input" type="checkbox" name="color" value="black" checked>
                     <span class="control-text">Черный</span>
                   </label>
                 </li>
                 <li class="product-filter-item">
                   <label class="control">
-                    <input class="control-input" type="checkbox" name="white" checked>
+                    <input class="control-input" type="checkbox" name="color" value="white" checked>
                     <span class="control-text">Белый</span>
                   </label>
                 </li>
                 <li class="product-filter-item">
                   <label class="control">
-                    <input class="control-input" type="checkbox" name="blue">
+                    <input class="control-input" type="checkbox" name="color" value="blue">
                     <span class="control-text">Синий</span>
                   </label>
                 </li>
                 <li class="product-filter-item">
                   <label class="control">
-                    <input class="control-input" type="checkbox" name="red">
+                    <input class="control-input" type="checkbox" name="color" value="red">
                     <span class="control-text">Красный</span>
                   </label>
                 </li>
                 <li class="product-filter-item">
                   <label class="control">
-                    <input class="control-input" type="checkbox" name="pink">
+                    <input class="control-input" type="checkbox" name="color" value="pink">
                     <span class="control-text">Розовый</span>
                   </label>
                 </li>
@@ -133,7 +137,7 @@
               <ul class="product-filter-list">
                 <li class="product-filter-item">
                   <label class="control">
-                    <input class="control-input" type="radio" name="has-bluetooth" value="yes">
+                    <input class="control-input" type="radio" name="has-bluetooth" value="yes" checked>
                     <span class="control-text">Есть</span>
                   </label>
                 </li>
@@ -144,7 +148,7 @@
                   </label>
                 </li>
               </ul>
-              <button class="product-filter-button link" type="submit"></button>
+              <button class="product-filter-button link" type="submit">Отправить</button>
             </fieldset>
           </form>
           <div class="products-container">
@@ -166,7 +170,7 @@
                   <img class="products-card-img" src="#" alt="">
                   <div class="products-card-container">
                     <h3 class="products-card-title">Любительская селфи-палка</h3>
-                    <b class="product-card-price">500 ₽</b>
+                    <span class="product-card-price">500 ₽</span>
                   </div>
                 </a>
               </li>
@@ -175,7 +179,7 @@
                   <img class="products-card-img" src="#" alt="">
                   <div class="products-card-container">
                     <h3 class="products-card-title">Профессиональная селфи-палка </h3>
-                    <b class="product-card-price">1 500 ₽</b>
+                    <span class="product-card-price">1 500 ₽</span>
                   </div>
                 </a>
               </li>
@@ -184,7 +188,7 @@
                   <img class="products-card-img" src="#" alt="">
                   <div class="products-card-container">
                     <h3 class="products-card-title">Непотопляемая селфи-палка</h3>
-                    <b class="product-card-price">2 500 ₽</b>
+                    <span class="product-card-price">2 500 ₽</span>
                   </div>
                 </a>
               </li>
@@ -193,14 +197,14 @@
                   <img class="products-card-img" src="#" alt="">
                   <div class="products-card-container">
                     <h3 class="products-card-title">Селфи-палка «Следуй за мной»</h3>
-                    <b class="product-card-price">1 500 ₽</b>
+                    <span class="product-card-price">1 500 ₽</span>
                   </div>
                 </a>
               </li>
             </ul>
             <button class="pruducts-show-more" type="button">Загрузить ещё</button>
             <div class="pagination">
-              <button class="pagination-previous" type="button">Назад</button>
+              <a class="pagination-previous" href="#">Назад</a>
               <ul class="pagination-list">
                 <li class="pagination-item">
                   <a class="pagination-link active" href="#">1</a>
@@ -212,13 +216,13 @@
                   <a class="pagination-link" href="#">3</a>
                 </li>
                 <li class="pagination-item">
-                  <a class="pagination-link" href="#">...</a>
+                  <button class="pagination-link pagination-show-more" type="button">...</button>
                 </li>
                 <li class="pagination-item">
                   <a class="pagination-link" href="#">15</a>
                 </li>
               </ul>
-              <button class="pagination-next" type="button">Вперёд</button>
+              <a class="pagination-next" href="#">Вперёд</a>
             </div>
           </div>
         </section>
@@ -248,19 +252,25 @@
           </nav>
           <ul class="socials">
             <li class="socials-item">
-              <a class="socials-link social-link-telegram" href="https://t.me/htmlacademy" aria-label="Мы в телеграмме"></a>
+              <a class="socials-link social-link-telegram" href="https://t.me/htmlacademy">
+                <span class="visually-hidden">Мы в телеграмме</span>
+              </a>
             </li>
             <li class="socials-item">
-              <a class="socials-link social-link-youtube" href="https://www.youtube.com/user/htmlacademyru" aria-label="Мы на ютубе"></a>
+              <a class="socials-link social-link-youtube" href="https://www.youtube.com/user/htmlacademyru">
+                <span class="visually-hidden">Мы на ютубе</span>
+              </a>
             </li>
             <li class="socials-item">
-              <a class="socials-link social-link-twitter" href="https://twitter.com/htmlacademy_ru" aria-label="Мы в твитере"></a>
+              <a class="socials-link social-link-twitter" href="https://twitter.com/htmlacademy_ru">
+                <span class="visually-hidden">Мы в твитере</span>
+              </a>
             </li>
           </ul>
         </div>
         <div class="right-column">
           <a class="footer-phone" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
-          <a class="company-link"></a>
+          <a class="company-link" href="#"></a>
         </div>
       </div>
     </footer>
