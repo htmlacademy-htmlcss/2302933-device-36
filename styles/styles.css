@@ -56,6 +56,15 @@ body {
   overflow: hidden;
 }
 
+.title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+  color: #000000;
+  margin: 0;
+}
+
 .page-container {
   width: 1160px;
   margin: 0 auto;
@@ -264,6 +273,10 @@ body {
 
 /* БЛОК ПРЕИМУЩЕСТВ */
 
+.advantages {
+  margin-bottom: 70px;
+}
+
 .advantages-container {
   display: flex;
   margin-bottom: 70px;
@@ -310,11 +323,6 @@ body {
 
 .advantages-title {
   margin: 0 0 34px 0;
-  font-family: "Raleway", sans-serif;
-  font-weight: 800;
-  font-size: 50px;
-  line-height: 50px;
-  color: #000000;
 }
 
 .advantages-description {
@@ -337,6 +345,73 @@ body {
   color: #000000;
   text-decoration: none;
 }
+
+/* БЛОК КОНТАКТНОЙ ИНФОРМАЦИИ */
+
+.sections-container {
+  display: flex;
+  margin-bottom: 70px;
+}
+
+.about-us {
+  margin-right: 108px;
+}
+
+.about-us-title {
+  margin-bottom: 48px;
+}
+
+.about-us-description {
+  margin: 0 0 30px 0;
+}
+
+.about-us-list {
+  margin: 0 0 30px 0;
+  list-style-type: disc;
+  padding: 0;
+}
+
+.about-us-item {
+  font-weight: 700;
+  line-height: 20px;
+  color: #000000;
+  letter-spacing: -0.02em;
+  margin-bottom: 19px;
+}
+
+.contacts-title {
+  margin-bottom: 48px;
+}
+
+.contacts-description {
+  margin: 0 0 30px 0;
+}
+
+.contacts-subtitle {
+  font-weight: 700;
+  font-size: 24px;
+  margin: 0 0 15px 0;
+}
+
+.contacts-address {
+  font-style: normal;
+  margin-bottom: 30px;
+}
+
+.contacts-address-text {
+  margin: 0;
+}
+
+.contacts-phone {
+  color: inherit;
+}
+
+.contacts-shedule {
+  list-style-type: none;
+  margin: 0 0 30px 0;
+  padding: 0;
+}
+
 
 
 
