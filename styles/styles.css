@@ -412,6 +412,74 @@ body {
   padding: 0;
 }
 
+/* БЛОК ПОДПИСКИ */
+
+.subscription {
+  padding: 64px 0 56px 0;
+}
+
+.subscription-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 144px;
+}
+
+.subscribe-title {
+  max-width: 350px;
+}
+
+.subscription-description {
+  max-width: 529px;
+  margin: 0;
+}
+
+.subscription-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.subscription-form {
+  display: flex;
+  width: 810px;
+  box-sizing: border-box;
+}
+
+.subscription-input {
+  flex-grow: 1;
+  padding: 11px 30px 11px 16px;
+  border: none;
+  border-bottom: 3px solid #C4C4C4;
+  background-color: transparent;
+
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #444444;
+}
+
+.subscription-button {
+  border: 3px solid #C4C4C4;
+  padding: 15px 36px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #000000;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.subscription-text {
+  padding-left: 32px;
+  background-image: url("../images/icons/correct-tick.svg");
+  background-repeat: no-repeat;
+  background-position: left center;
+}
 
 
 
