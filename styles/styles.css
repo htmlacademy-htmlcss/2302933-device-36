@@ -202,10 +202,6 @@ body {
   text-decoration: none;
 }
 
-.navigation {
-
-}
-
 .navigation-list {
   list-style-type: none;
   margin: 0;
@@ -227,6 +223,8 @@ body {
   text-decoration: none;
   display: block;
 }
+
+/* БЛОК КАТЕГОРИЙ */
 
 .category {
   margin-bottom: 70px;
@@ -262,4 +260,86 @@ body {
   line-height: 24px;
   letter-spacing: -0.02em;
   color: #000000;
+}
+
+/* БЛОК ПРЕИМУЩЕСТВ */
+
+.advantages-container {
+  display: flex;
+  margin-bottom: 70px;
+}
+
+.advantages-buttons-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 64px 0;
+  width: 287px;
+  box-sizing: border-box;
+  border-right: 7px solid #000000;
+}
+
+.advantages-buttons-item {
+  margin-bottom: 35px;
+}
+
+.advantages-content-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.advantages-content-item {
+  padding: 72px 305px 72px 116px;
+  max-width: 450px;
+  background-repeat: no-repeat;
+  background-position: right 28px center;
+}
+
+.delivery-content {
+  background-image: url("../images/advantages/delivery.svg");
+  background-position: right 63px center;
+}
+
+.guarantee-content {
+  background-image: url("../images/advantages/guarantee.svg");
+}
+
+.credit-content {
+  background-image: url("../images/advantages/credit.svg");
+}
+
+.advantages-title {
+  margin: 0 0 34px 0;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+  color: #000000;
+}
+
+.advantages-description {
+  margin: 0;
+}
+
+.advantages-delivery {
+  padding: 40px 0;
+}
+
+.advantages-delivery-link {
+  display: block;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #000000;
+  text-decoration: none;
+}
+
+
+
+.hidden {
+  display: none;
 }
