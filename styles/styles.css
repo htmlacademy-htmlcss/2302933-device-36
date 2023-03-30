@@ -481,6 +481,113 @@ body {
   background-position: left center;
 }
 
+/* ПОДВАЛ */
+
+.footer {
+  background-color: #444444;
+}
+
+.footer-container {
+  padding: 62px 0;
+  display: flex;
+}
+
+.footer-left-column {
+  max-width: 240px;
+}
+
+.footer-logo-link {
+  display: block;
+  width: fit-content;
+  margin-bottom: 35px;
+}
+
+.footer-address {
+  font-size: 16px;
+  line-height: 20px;
+  font-style: normal;
+  color: #ffffff;
+}
+
+.footer-middle-column {
+  margin: 0 auto;
+}
+
+.footer-navigation-list {
+  list-style-type: none;
+  margin: 0 0 62px 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.footer-navigation-item:not(:last-child) {
+  margin-right: 35px;
+}
+
+.footer-navigation-link {
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  line-height: 21px;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.socials {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.socials-link {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.3);
+  background-repeat: no-repeat;
+  background-position: center;
+  text-decoration: none;
+}
+
+.social-link-telegram {
+  background-image: url("../images/icons/telegram.svg");
+}
+
+.social-link-youtube {
+  background-image: url("../images/icons/youtube.svg");
+}
+
+.social-link-twitter {
+  background-image: url("../images/icons/twitter.svg");
+}
+
+.socials-item:not(:last-child) {
+  margin-right: 15px;
+}
+
+.footer-right-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.footer-phone {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.company-link {
+  color: #FFC700;
+  text-decoration: none;
+}
 
 
 .hidden {
