@@ -750,6 +750,7 @@ body {
 }
 
 .products-card-link {
+  display: block;
   text-decoration: none;
   color: #000000;
 }
