@@ -75,6 +75,7 @@ body {
 .page-header-top {
   display: flex;
   align-items: center;
+  margin-bottom: 30px;
 }
 
 .search-form {
@@ -134,7 +135,7 @@ body {
 }
 
 .logout {
-  display: none;
+  opacity: 0.3;
 }
 
 .login {
@@ -588,6 +589,48 @@ body {
   color: #FFC700;
   text-decoration: none;
 }
+
+/* СТРАНИЦА КАТАЛОГА */
+
+.inner-header {
+  padding: 35px 21px 35px 60px;
+}
+
+.inner-header-title {
+  margin: 0 0 16px 0;
+}
+
+.breadcrumbs {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumbs-item:not(:last-child) {
+  margin-right: 36px;
+  position: relative;
+}
+
+.breadcrumbs-item:not(:last-child)::after {
+  content: url("../images/icons/breadcrumbs-arrow.svg");
+  position: absolute;
+  line-height: 0;
+  right: -16px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.breadcrumbs-link {
+  display: block;
+  text-decoration: none;
+  color: #000000;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+
 
 
 .hidden {

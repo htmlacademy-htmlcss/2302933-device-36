@@ -13,12 +13,12 @@
       <div class="page-container">
         <div class="page-header-top">
           <a class="logo-link" href="index.html">
-            <img class="logo" src="#" alt="Логотип компании Device." >
+            <img class="logo" src="images/main-logo.svg" alt="Логотип компании Device." >
           </a>
           <form class="search-form" method="get" action="#">
             <label class="visually-hidden" for="search-input">Поиск по сайту</label>
-            <input class="search-input" type="text" name="search-input" id="search-input" required>
-            <button class="search-button" type="submit">Войти</button>
+            <input class="search-input" type="text" name="search-input" id="search-input" placeholder="Поиск по сайту">
+            <button class="search-button" type="submit">Найти</button>
           </form>
           <ul class="user-menu">
             <li class="user-menu-item">
@@ -37,10 +37,12 @@
         </div>
         <div class="page-header-bottom">
           <div class="catalog-menu">
-            <span class="catalog-menu-title">Каталог товаров</span>
-            <button class="catalog-menu-button" type="button">
-              <span class="visually-hidden">Посмотреть каталог товаров.</span>
-            </button>
+            <div class="catalog-menu-container">
+              <span class="catalog-menu-title">Каталог товаров</span>
+              <button class="catalog-menu-button catalog-plus" type="button">
+                <span class="visually-hidden">Посмотреть каталог товаров.</span>
+              </button>
+            </div>
             <ul class="catalog-menu-list">
               <li class="catalog-menu-item">
                 <a class="catalog-menu-link" href="#">Виртуальная реальность</a>
@@ -62,24 +64,26 @@
               </li>
             </ul>
           </div>
-          <ul class="navigation">
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">Доставка</a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">Гарантия</a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">Контакты</a>
-            </li>
-          </ul>
+          <nav class="navigation">
+            <ul class="navigation-list">
+              <li class="navigation-item">
+                <a class="navigation-link" href="#">Доставка</a>
+              </li>
+              <li class="navigation-item">
+                <a class="navigation-link" href="#">Гарантия</a>
+              </li>
+              <li class="navigation-item">
+                <a class="navigation-link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
         </div>
       </div>
     </header>
     <main class="inner-main">
       <div class="page-container">
         <section class="inner-header">
-          <h1 class="innert-header-title">Моноподы для селфи</h1>
+          <h1 class="inner-header-title title">Моноподы для селфи</h1>
           <ol class="breadcrumbs">
             <li class="breadcrumbs-item">
               <a class="breadcrumbs-link" href="#">Главная</a>
