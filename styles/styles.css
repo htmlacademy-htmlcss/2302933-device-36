@@ -82,6 +82,7 @@ body {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: #000000;
+  z-index: 1;
 }
 
 .link::before {
@@ -514,6 +515,10 @@ body {
   margin-bottom: 19px;
 }
 
+.about-us-link {
+  width: 270px;
+}
+
 .contacts-title {
   margin-bottom: 48px;
 }
@@ -545,6 +550,10 @@ body {
   list-style-type: none;
   margin: 0 0 30px 0;
   padding: 0;
+}
+
+.contacts-link {
+  width: 260px;
 }
 
 /* БЛОК ПОДПИСКИ */
@@ -808,6 +817,10 @@ body {
   padding: 0;
   margin: 0;
   list-style-type: none;
+}
+
+.product-filter-button {
+  width: 220px;
 }
 
 .products-container {
