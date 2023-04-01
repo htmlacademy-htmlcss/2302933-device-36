@@ -32,7 +32,7 @@ html {
 
 body {
   margin: 0;
-  height: 100%;
+  min-height: 100%;
   min-width: 1160px;
 
   font-family: "Rubik", sans-serif;
@@ -76,6 +76,10 @@ body {
   display: flex;
   align-items: center;
   margin-bottom: 30px;
+}
+
+.logo {
+  display: block;
 }
 
 .search-form {
