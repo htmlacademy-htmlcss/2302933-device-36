@@ -65,6 +65,37 @@ body {
   margin: 0;
 }
 
+.link {
+  position: relative;
+  padding: 10px 0;
+  min-width: 160px;
+  cursor: pointer;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.link::before {
+  position: absolute;
+  content: "";
+  background-color: #FFE17F;
+  height: 8px;
+  right: 0;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: -1;
+}
+
 .page-container {
   width: 1160px;
   margin: 0 auto;
@@ -182,6 +213,7 @@ body {
 }
 
 .catalog-menu-button {
+  padding: 0;
   width: 50px;
   height: 50px;
   display: block;
@@ -236,6 +268,104 @@ body {
   color: #000000;
   text-decoration: none;
   display: block;
+}
+
+/* СЛАЙДЕР */
+
+.intro {
+  margin-bottom: 70px;
+}
+
+.slider {
+  display: flex;
+}
+
+.slider-images {
+  position: relative;
+  margin-right: 40px;
+}
+
+.slider-images-button {
+  cursor: pointer;
+  padding: 0;
+  position: absolute;
+  border: none;
+  background-color: transparent;
+  width: 20px;
+  height: 60px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../images/icons/slider-button.svg");
+}
+
+.slider-images-next {
+  transform: rotate(180deg);
+  right: 0;
+  top: 211px;
+}
+
+.slider-images-previous {
+  left: 30px;
+  top: 211px;
+}
+
+.slider-title {
+  margin: 0 0 29px 0;
+}
+
+.slider-description {
+  margin: 0 0 50px 0;
+}
+
+.slider-link {
+  margin-bottom: 50px;
+  width: 220px;
+}
+
+.slider-advantages {
+  margin: 0;
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+}
+
+.slider-advantage {
+  display: flex;
+  flex-direction: column;
+}
+
+.slider-advantage:not(:last-child) {
+  margin-right: 20px;
+}
+
+.slider-advantage-title {
+  font-size: 36px;
+  color: #000000;
+  margin-bottom: 12px;
+}
+
+.slider-advantage-description {
+  font-size: 16px;
+}
+
+.slider-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.slider-button {
+  padding: 0;
+  width: 12px;
+  height: 12px;
+  border: 2px solid #000000;
+  border-radius: 50%;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.slider-button.active {
+  background-color: #000000;
 }
 
 /* БЛОК КАТЕГОРИЙ */
