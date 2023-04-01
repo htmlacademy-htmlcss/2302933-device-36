@@ -781,8 +781,7 @@ body {
 
 .products-filter {
   background-color: #F0F0F0;
-  padding: 25px 60px;
-  width: 320px;
+  padding: 25px 40px 25px 60px;
   box-sizing: border-box;
 }
 
