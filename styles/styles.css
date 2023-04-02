@@ -413,6 +413,11 @@ body {
   gap: 40px;
 }
 
+.category-item-link {
+  text-decoration: none;
+  display: block;
+}
+
 .category-item-container {
   background-color: #FFE17F;
   height: 160px;
