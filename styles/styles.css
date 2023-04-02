@@ -110,10 +110,21 @@ body {
 
 /* ШАПКА */
 
+.page-header {
+  padding: 20px 60px;
+  background: linear-gradient(#ffffff 0, #ffffff 40px, #FFE17F 40px, #FFE17F 100%);
+}
+
 .page-header-top {
   display: flex;
-  align-items: center;
   margin-bottom: 30px;
+}
+
+.logo-link {
+  display: block;
+  margin-bottom: 30px;
+  width: fit-content;
+  text-decoration: none;
 }
 
 .logo {
@@ -121,9 +132,9 @@ body {
 }
 
 .search-form {
-  width: 517px;
+  min-width: 517px;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   margin-right: 26px;
 }
 
@@ -161,10 +172,10 @@ body {
   list-style-type: none;
 
   display: flex;
-}
-
-.user-menu-item:not(:last-child) {
-  margin-right: 28px;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 28px;
+  max-width: 500px;
 }
 
 .user-menu-link {
@@ -208,7 +219,6 @@ body {
 
 .page-header-bottom {
   display: flex;
-  align-items: center;
   justify-content: space-between;
 }
 
@@ -263,15 +273,20 @@ body {
   text-decoration: none;
 }
 
+.navigation {
+  display: flex;
+  align-items: center;
+  max-width: 500px;
+}
+
 .navigation-list {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  display: flex;
-}
 
-.navigation-item {
-  margin-right: 45px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 45px;
 }
 
 .navigation-link {

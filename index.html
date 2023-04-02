@@ -9,75 +9,73 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
-    <header class="page-header">
-      <div class="page-container">
-        <div class="page-header-top">
-          <a class="logo-link" href="index.html">
-            <img class="logo" src="images/main-logo.svg" alt="Логотип компании Device." width="145" height="36">
-          </a>
-          <form class="search-form" method="get" action="#">
-            <label class="visually-hidden" for="search-input">Поиск по сайту</label>
-            <input class="search-input" type="text" name="search-input" id="search-input" placeholder="Поиск по сайту">
-            <button class="search-button" type="submit">Найти</button>
-          </form>
-          <ul class="user-menu">
-            <li class="user-menu-item">
-              <a class="user-menu-link login" href="#">Войти</a>
+    <header class="page-container page-header">
+      <a class="logo-link" href="index.html">
+        <img class="logo" src="images/main-logo.svg" alt="Логотип компании Device." width="145" height="36">
+      </a>
+      <div class="page-header-top">
+        <form class="search-form" method="get" action="#">
+          <label class="visually-hidden" for="search-input">Поиск по сайту</label>
+          <input class="search-input" type="text" name="search-input" id="search-input" placeholder="Поиск по сайту">
+          <button class="search-button" type="submit">Найти</button>
+        </form>
+        <ul class="user-menu">
+          <li class="user-menu-item">
+            <a class="user-menu-link login" href="#">Войти</a>
+          </li>
+          <li class="user-menu-item">
+            <button class="user-menu-link logout invisible" type="button">Выйти</button>
+          </li>
+          <li class="user-menu-item">
+            <a class="user-menu-link compare" href="#">Сравнить</a>
+          </li>
+          <li class="user-menu-item">
+            <button class="user-menu-link cart" type="button">Корзина</button>
+          </li>
+        </ul>
+      </div>
+      <div class="page-header-bottom">
+        <div class="catalog-menu">
+          <div class="catalog-menu-container">
+            <span class="catalog-menu-title">Каталог товаров</span>
+            <button class="catalog-menu-button catalog-plus" type="button">
+              <span class="visually-hidden">Посмотреть каталог товаров.</span>
+            </button>
+          </div>
+          <ul class="catalog-menu-list">
+            <li class="catalog-menu-item">
+              <a class="catalog-menu-link" href="#">Виртуальная реальность</a>
             </li>
-            <li class="user-menu-item">
-              <button class="user-menu-link logout invisible" type="button">Выйти</button>
+            <li class="catalog-menu-item">
+              <a class="catalog-menu-link" href="#">Моноподы для cелфи</a>
             </li>
-            <li class="user-menu-item">
-              <a class="user-menu-link compare" href="#">Сравнить</a>
+            <li class="catalog-menu-item">
+              <a class="catalog-menu-link" href="#">Экшн-камеры</a>
             </li>
-            <li class="user-menu-item">
-              <button class="user-menu-link cart" type="button">Корзина</button>
+            <li class="catalog-menu-item">
+              <a class="catalog-menu-link" href="#">Фитнес-браслеты</a>
+            </li>
+            <li class="catalog-menu-item">
+              <a class="catalog-menu-link" href="#">Умные часы</a>
+            </li>
+            <li class="catalog-menu-item">
+              <a class="catalog-menu-link" href="#">Квадрокоптеры</a>
             </li>
           </ul>
         </div>
-        <div class="page-header-bottom">
-          <div class="catalog-menu">
-            <div class="catalog-menu-container">
-              <span class="catalog-menu-title">Каталог товаров</span>
-              <button class="catalog-menu-button catalog-plus" type="button">
-                <span class="visually-hidden">Посмотреть каталог товаров.</span>
-              </button>
-            </div>
-            <ul class="catalog-menu-list">
-              <li class="catalog-menu-item">
-                <a class="catalog-menu-link" href="#">Виртуальная реальность</a>
-              </li>
-              <li class="catalog-menu-item">
-                <a class="catalog-menu-link" href="#">Моноподы для cелфи</a>
-              </li>
-              <li class="catalog-menu-item">
-                <a class="catalog-menu-link" href="#">Экшн-камеры</a>
-              </li>
-              <li class="catalog-menu-item">
-                <a class="catalog-menu-link" href="#">Фитнес-браслеты</a>
-              </li>
-              <li class="catalog-menu-item">
-                <a class="catalog-menu-link" href="#">Умные часы</a>
-              </li>
-              <li class="catalog-menu-item">
-                <a class="catalog-menu-link" href="#">Квадрокоптеры</a>
-              </li>
-            </ul>
-          </div>
-          <nav class="navigation">
-            <ul class="navigation-list">
-              <li class="navigation-item">
-                <a class="navigation-link" href="#">Доставка</a>
-              </li>
-              <li class="navigation-item">
-                <a class="navigation-link" href="#">Гарантия</a>
-              </li>
-              <li class="navigation-item">
-                <a class="navigation-link" href="#">Контакты</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
+        <nav class="navigation">
+          <ul class="navigation-list">
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">Доставка</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">Гарантия</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </header>
     <main class="index-main">
