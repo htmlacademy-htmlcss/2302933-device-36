@@ -339,6 +339,12 @@ body {
   margin-bottom: 70px;
 }
 
+.sliders {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
 .slider {
   display: flex;
 }
@@ -370,6 +376,10 @@ body {
 .slider-images-previous {
   left: 30px;
   top: 211px;
+}
+
+.slider-content {
+  max-width: 560px;
 }
 
 .slider-title {
