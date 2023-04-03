@@ -174,7 +174,8 @@ body {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 28px;
+  gap: 28px 23px;
+  min-width: 497px;
   max-width: 500px;
 }
 
@@ -199,6 +200,10 @@ body {
   cursor: pointer;
 }
 
+.login-item {
+  margin-right: auto;
+}
+
 .login {
   background-image: url("../images/icons/login.svg");
 }
@@ -208,13 +213,35 @@ body {
 }
 
 .cart {
+  position: relative;
   border: none;
   background-color: transparent;
   font-family: "Rubik", sans-serif;
   font-size: 18px;
   line-height: 30px;
+  padding-left: 45px;
 
   background-image: url("../images/icons/cart.svg");
+  background-position: left 15px center;
+}
+
+.cart::before {
+  content: attr(data-counter);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  padding: 0 4px;
+  min-width: 21px;
+  height: 21px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .page-header-bottom {
@@ -799,7 +826,7 @@ body {
 /* СТРАНИЦА КАТАЛОГА */
 
 .inner-header {
-  padding: 35px 21px 35px 60px;
+  padding: 35px 60px;
 }
 
 .inner-header-title {
@@ -810,12 +837,14 @@ body {
   list-style-type: none;
   margin: 0;
   padding: 0;
+
   display: flex;
+  gap: 36px;
   align-items: center;
+  flex-wrap: wrap;
 }
 
-.breadcrumbs-item:not(:last-child) {
-  margin-right: 36px;
+.breadcrumbs-item {
   position: relative;
 }
 
@@ -823,7 +852,7 @@ body {
   content: url("../images/icons/breadcrumbs-arrow.svg");
   position: absolute;
   line-height: 0;
-  right: -16px;
+  right: -18px;
   top: 50%;
   transform: translateY(-50%);
 }
