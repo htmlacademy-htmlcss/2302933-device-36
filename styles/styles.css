@@ -929,10 +929,25 @@ body {
 }
 
 .products-filter-group {
+  position: relative;
   padding: 0;
   margin: 0;
   border: none;
   margin-bottom: 35px;
+}
+
+.products-filter-group:not(:last-of-type) {
+  margin-bottom: 47px;
+}
+
+.products-filter-group::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  background-color: #000000;
+  left: 0;
+  right: 0;
+  top: -54px;
 }
 
 .products-fitler-title {
@@ -948,6 +963,59 @@ body {
   padding: 0;
   margin: 0;
   list-style-type: none;
+}
+
+.product-filter-item:not(:last-child) {
+  margin-bottom: 17px;
+}
+
+.control {
+  position: relative;
+  display: flex;
+  gap: 16px;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.control-mark {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #cccccc;
+  border-radius: 3px;
+}
+
+.control-text {
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark {
+  background-image: url("../images/icons/pressed-tick.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border-color: #000000;
+}
+
+.control-input[type="radio"] + .control-mark {
+  border-radius: 50%;
+}
+
+.control-input[type="radio"]:checked + .control-mark::before {
+  content: "";
+  position: absolute;
+  background-color: #000000;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.control-input[type="radio"]:checked + .control-mark {
+  border-color: #000000;
 }
 
 .product-filter-button {
