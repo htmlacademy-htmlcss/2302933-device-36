@@ -615,12 +615,12 @@ body {
 /* БЛОК ПРЕИМУЩЕСТВ */
 
 .advantages {
-  padding-top: 12px;
   margin-bottom: 70px;
   background: linear-gradient(#ffffff 114px, #F0F0F0 114px, #F0F0F0 403px, #ffffff 403px);
 }
 
 .advantages-container {
+  padding-top: 12px;
   display: flex;
   margin-bottom: 142px;
 }
@@ -757,7 +757,8 @@ body {
 .about-us {
   position: relative;
   padding-top: 40px;
-  margin-right: 108px;
+  margin-right: auto;
+  max-width: 520px;
 }
 
 .about-us::before,
@@ -813,6 +814,7 @@ body {
 .contacts {
   padding-top: 40px;
   position: relative;
+  max-width: 532px;
 }
 
 .contacts-title {
