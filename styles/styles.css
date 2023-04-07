@@ -153,6 +153,20 @@ body {
   margin-bottom: 30px;
   width: fit-content;
   text-decoration: none;
+  transition: opacity .2s;
+}
+
+.logo-link:hover {
+  opacity: 0.6;
+}
+
+.logo-link:active {
+  opacity: 0.3;
+}
+
+.logo-link:focus-visible {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
 }
 
 .logo {
@@ -823,12 +837,16 @@ body {
   list-style-type: none;
   margin: 0 0 62px 0;
   padding: 0;
+  max-width: 500px;
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 35px;
   align-items: center;
 }
 
 .footer-navigation-link {
+  position: relative;
   display: block;
   color: #ffffff;
   text-decoration: none;
@@ -839,11 +857,41 @@ body {
   text-transform: uppercase;
 }
 
+.footer-navigation-link::after {
+  position: absolute;
+  content: "";
+  background-color: #FFC700;
+  height: 2px;
+  left: 0;
+  right: 0;
+  bottom: -4px;
+  visibility: hidden;
+}
+
+.footer-navigation-link:hover  {
+  color: #FFC700;
+}
+
+.footer-navigation-link:hover::after {
+  visibility: visible;
+}
+
+.footer-navigation-link:active {
+  opacity: 0.3;
+}
+
+.footer-navigation-link:focus-visible {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
+}
+
 .socials {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  max-width: 500px;
   display: flex;
+  flex-wrap: wrap;
   gap: 15px;
   justify-content: center;
 }
@@ -859,6 +907,14 @@ body {
   text-decoration: none;
 }
 
+.socials-link:hover {
+  background-color: #FFC700;
+}
+
+.socials-link:active {
+  opacity: 0.3;
+}
+
 .social-link-telegram {
   background-image: url("../images/icons/telegram.svg");
 }
@@ -872,6 +928,7 @@ body {
 }
 
 .footer-right-column {
+  max-width: 200px;
   display: flex;
   flex-direction: column;
   gap: 63px;
@@ -884,9 +941,36 @@ body {
   line-height: 20px;
 }
 
+.footer-phone:hover {
+  color: #FFC700;
+}
+
+.footer-phone:active {
+  opacity: 0.3;
+}
+
+.footer-phone:focus-visible {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
+}
+
 .company-link {
   color: #FFC700;
   text-decoration: none;
+  align-self: flex-end;
+}
+
+.company-link:hover {
+  color: #ffffff;
+}
+
+.company-link:active {
+  opacity: 0.3;
+}
+
+.company-link:focus-visible {
+  outline: 1px solid #AF4FFF;
+  outline-offset: 2px;
 }
 
 /* СТРАНИЦА КАТАЛОГА */
