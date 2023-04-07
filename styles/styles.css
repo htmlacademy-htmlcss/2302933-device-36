@@ -438,6 +438,7 @@ body {
   cursor: pointer;
   padding: 0;
   position: absolute;
+  z-index: 1;
   border: none;
   background-color: transparent;
   width: 20px;
@@ -445,6 +446,25 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-image: url("../images/icons/slider-button.svg");
+  transition: opacity .2s;
+}
+
+.slider-images-button:hover {
+  opacity: 0.6;
+}
+
+.slider-images-button:active {
+  opacity: 0.4;
+}
+
+.slider-images-button:focus-visible {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
+}
+
+.slider-images-button:disabled {
+  opacity: 0.1;
+  pointer-events: none;
 }
 
 .slider-images-next {
@@ -492,7 +512,6 @@ body {
   flex-direction: column;
 }
 
-
 .slider-advantage-title {
   font-size: 36px;
   color: #000000;
@@ -504,6 +523,8 @@ body {
 }
 
 .slider-buttons {
+  position: relative;
+  z-index: 1;
   display: flex;
   justify-content: center;
   gap: 20px;
@@ -521,6 +542,14 @@ body {
 
 .slider-button.active {
   background-color: #000000;
+}
+
+.slider-button:hover {
+  opacity: 0.6;
+}
+
+.slider-button:active {
+  opacity: 0.3;
 }
 
 /* БЛОК КАТЕГОРИЙ */
