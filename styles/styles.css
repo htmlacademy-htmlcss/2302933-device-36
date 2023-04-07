@@ -326,7 +326,7 @@ body {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: #000000;
-  margin-right: 7px;
+  margin-right: 17px;
 }
 
 .catalog-menu-button {
@@ -407,7 +407,7 @@ body {
 }
 
 .slider {
-  padding: 85px 0 24px;
+  padding-bottom: 24px;
   display: flex;
   background: linear-gradient(#FFE17F 0, #FFE17F 113px, #ffffff 113px);
 }
@@ -431,7 +431,7 @@ body {
 
 .slider-image {
   position: absolute;
-  top: -122px;
+  top: -37px;
 }
 
 .slider-images-button {
@@ -450,15 +450,18 @@ body {
 .slider-images-next {
   transform: rotate(180deg);
   right: 0;
-  top: 211px;
+  top: 175px;
 }
 
 .slider-images-previous {
   left: 30px;
-  top: 211px;
+  top: 175px;
 }
 
 .slider-content {
+  position: relative;
+  z-index: 1;
+  padding-top: 85px;
   max-width: 560px;
 }
 
