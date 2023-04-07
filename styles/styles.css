@@ -517,6 +517,20 @@ body {
 .category-item-link {
   text-decoration: none;
   display: block;
+  height: 100%;
+}
+
+.category-item-link:hover .category-item-container {
+  background-color: #FFC700;
+}
+
+.category-item-link:active {
+  opacity: 0.3;
+}
+
+.category-item-link:focus-visible {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
 }
 
 .category-item-container {
@@ -526,6 +540,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: background-color .3s;
 }
 
 .category-item-img-bottom {
