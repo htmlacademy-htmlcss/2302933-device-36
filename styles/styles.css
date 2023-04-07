@@ -399,18 +399,39 @@ body {
 }
 
 .sliders {
+  position: relative;
   margin: 0;
   padding: 0;
   list-style-type: none;
+  counter-reset: section;
 }
 
 .slider {
+  padding: 85px 0 24px;
   display: flex;
+  background: linear-gradient(#FFE17F 0, #FFE17F 113px, #ffffff 113px);
+}
+
+.slider::before {
+  position: absolute;
+  top: 45px;
+  right: 50px;
+  counter-increment: section;
+  content: "0" counters(section, "");
+  font-weight: 700;
+  font-size: 180px;
+  color: #ffffff;
 }
 
 .slider-images {
   position: relative;
   margin-right: 40px;
+  min-width: 560px;
+}
+
+.slider-image {
+  position: absolute;
+  top: -122px;
 }
 
 .slider-images-button {
