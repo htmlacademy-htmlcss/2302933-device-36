@@ -1013,6 +1013,20 @@ body {
   color: #000000;
   font-size: 16px;
   line-height: 20px;
+  transition: opacity .2s;
+}
+
+.breadcrumbs-link:hover {
+  opacity: 0.6;
+}
+
+.breadcrumbs-link:active {
+  opacity: 0.3;
+}
+
+.breadcrumbs-link:focus-visible {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
 }
 
 /* БЛОК ТОВАРОВ */
