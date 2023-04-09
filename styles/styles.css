@@ -1472,6 +1472,29 @@ body {
   line-height: 21px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+  transition: color 0.2s, background-color .2s;
+}
+
+.pagination-previous:hover,
+.pagination-next:hover {
+  background-color: #dcdcdc;
+}
+
+.pagination-previous:active,
+.pagination-next:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.pagination-previous:focus-visible,
+.pagination-next:focus-visible {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+}
+
+.pagination-previous.disabled,
+.pagination-next.disabled {
+  color: rgba(0, 0, 0, 0.3);
+  pointer-events: none;
 }
 
 .pagination-list {
@@ -1490,8 +1513,8 @@ body {
   background-color: transparent;
   font-size: 16px;
   line-height: 20px;
-  color: #444444;
-  opacity: 0.3;
+  color: rgba(68, 68, 68, 0.3);
+  transition: color .2s;
 }
 
 .pagination-show-more {
@@ -1499,8 +1522,21 @@ body {
   cursor: pointer;
 }
 
+.pagination-link:hover {
+  color: #444444;
+}
+
+.pagination-link:active {
+  color: rgba(68, 68, 68, 0.1);
+}
+
+.pagination-link:focus-visible {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+}
+
 .pagination-link.active {
-  opacity: 0.6;
+  color: rgba(68, 68, 68, 0.6);
 }
 
 .new {
