@@ -1384,6 +1384,14 @@ body {
   transform: rotate(180deg);
 }
 
+.sort-button:hover {
+  opacity: 0.5;
+}
+
+.sort-button:active {
+  opacity: 1;
+}
+
 .products-inner-container {
   padding: 70px 40px 78px;
   background-color: #ffffff;
