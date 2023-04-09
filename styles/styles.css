@@ -1452,6 +1452,24 @@ body {
   text-transform: uppercase;
   cursor: pointer;
   margin-bottom: 44px;
+  transition: border-color .3s, opacity .3s;
+}
+
+.products-show-more:hover {
+  border-color: #000000;
+}
+
+.products-show-more:active {
+  opacity: 0.3;
+}
+
+.products-show-more:focus-visible {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+}
+
+.products-show-more:disabled {
+  opacity: 0.3;
 }
 
 .pagination {
