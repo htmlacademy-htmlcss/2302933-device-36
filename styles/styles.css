@@ -79,9 +79,10 @@ body {
 
 .link {
   position: relative;
-  padding: 10px 33px;
+  padding: 10px 0;
   cursor: pointer;
-  display: inline-block;
+  width: 100%;
+  display: block;
   text-decoration: none;
   text-align: center;
   background-color: transparent;
@@ -99,27 +100,24 @@ body {
 .link::before {
   position: absolute;
   content: "";
-  background-color: #ffe17f;
-  height: 8px;
-  right: 0;
+  top: 0;
   left: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  width: 100%;
+  height: 100%;
   z-index: -1;
-}
-
-.link:hover {
-  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+  transform: scaleY(0.2);
   background-color: #ffe17f;
+  transition: all .2s ease;
 }
 
-.link:active {
-  background-color: #ffcc33;
-  filter: none;
+.link:hover::before {
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+  transform: scaleY(1);
 }
 
 .link:active::before {
   background-color: #ffcc33;
+  filter: none;
 }
 
 .link:focus-visible {
@@ -498,6 +496,7 @@ body {
 }
 
 .slider-link {
+  max-width: 220px;
   margin-bottom: 50px;
 }
 
@@ -626,7 +625,7 @@ body {
   margin-bottom: 142px;
 }
 
-.advantages-buttons-list {
+.advantages-buttons {
   list-style-type: none;
   margin: 0 auto 0 0;
   padding: 63px 0;
@@ -639,13 +638,16 @@ body {
   margin-bottom: 35px;
 }
 
+.advantages-button {
+  max-width: 160px;
+}
+
 .advantages-button.active {
-  width: 100%;
+  max-width: none;
   padding-left: 20px;
   text-align: left;
   background-color: #000000;
   color: #ffe17f;
-  z-index: 1;
 }
 
 .advantages-button.active::before {
@@ -662,6 +664,11 @@ body {
   padding: 72px 305px 72px 100px;
   background-repeat: no-repeat;
   background-position: right 28px center;
+  display: none;
+}
+
+.advantages-content-item.active {
+  display: block;
 }
 
 .delivery-content {
@@ -682,7 +689,7 @@ body {
 }
 
 .advantages-description {
-  max-width: 450px;
+  max-width: 460px;
   margin: 0;
 }
 
@@ -808,6 +815,10 @@ body {
   background-color: #FFC700;
 }
 
+.about-us-link {
+  max-width: 270px;
+}
+
 .contacts {
   padding-top: 40px;
   position: relative;
@@ -845,6 +856,10 @@ body {
   list-style-type: none;
   margin: 0 0 30px 0;
   padding: 0;
+}
+
+.contacts-link {
+  max-width: 259px;
 }
 
 /* БЛОК ПОДПИСКИ */
@@ -1205,6 +1220,7 @@ body {
 }
 
 .products-filter {
+  min-width: 320px;
   padding: 25px 40px 25px 60px;
   box-sizing: border-box;
 }
