@@ -364,6 +364,37 @@
         </div>
       </div>
     </footer>
+    <div class="modal-container">
+      <div class="modal">
+        <button class="close-modal-button" type="button">
+          <span class="visually-hidden">Закрыть модальное окно</span>
+        </button>
+        <h2 class="modal-title">Доставка под заказ</h2>
+        <form class="modal-content" action="https://echo.htmlacademy.ru/" method="post">
+          <div class="modal-content-top">
+            <div class="modal-content-container">
+              <label class="modal-content-label">Ваше имя:</label>
+              <input class="modal-content-input modal-name-input" type="text" name="name" placeholder="Введите имя">
+            </div>
+            <div class="modal-content-container">
+              <label class="modal-content-label">Ваш e-mail:</label>
+              <input class="modal-content-input modal-email-input" type="email" name="email" placeholder="Введите ваш e-mail">
+            </div>
+          </div>
+          <div class="modal-content-bottom">
+            <div class="modal-content-container">
+              <label class="modal-content-label">Что нужно привезти:</label>
+              <input class="modal-content-input modal-information-input" type="text" name="information" placeholder="В свободной форме">
+            </div>
+            <div class="modal-content-container">
+              <label class="modal-content-label">Количество:</label>
+              <input class="modal-content-input modal-amount-input" type="number" name="amount" value="">
+            </div>
+          </div>
+          <button class="link" type="submit">Отправить</button>
+        </form>
+      </div>
+    </div>
     <script src="js/index.js"></script>
   </body>
 </html>
