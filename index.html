@@ -374,23 +374,30 @@
           <div class="modal-content-top">
             <div class="modal-content-container">
               <label class="modal-content-label" for="name">Ваше имя:</label>
-              <input class="modal-content-input modal-name-input" type="text" id="name" name="name" placeholder="Введите имя">
+              <input class="modal-content-input modal-name-input" type="text" id="name" name="name" placeholder="Введите имя" required>
             </div>
             <div class="modal-content-container">
               <label class="modal-content-label" for="email">Ваш e-mail:</label>
-              <input class="modal-content-input modal-email-input" type="email" id="email" name="email" placeholder="Введите ваш e-mail">
+              <input class="modal-content-input modal-email-input" type="email" id="email" name="email" placeholder="Введите ваш e-mail" required>
+              <span class="modal-input-message is-invalid hidden">Забавный у вас адрес</span>
             </div>
           </div>
           <div class="modal-content-bottom">
-            <div class="modal-content-container">
+            <div class="modal-content-container modal-content-information">
               <label class="modal-content-label" for="information">Что нужно привезти:</label>
               <input class="modal-content-input modal-information-input" type="text" id="information" name="information" placeholder="В свободной форме">
             </div>
             <div class="modal-content-container">
-              <label class="modal-content-label" for="amount">Количество:</label>
+              <div class="modal-tooltip-container">
+                <label class="modal-content-label modal-amount-label" for="amount">Количество:</label>
+                <div class="tooltip">
+                  <button class="tooltip-button" type="button" aria-labelledby="tooltip-products-amount"></button>
+                  <span class="tooltip-text" role="tooltip" id="tooltip-products-amount">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям к провозу багажа.</span>
+                </div>
+              </div>
               <div class="modal-amount-container">
-                <button class="modal-amount-button modal-minus-button" type="button"></button>
                 <input class="modal-amount-input" type="number" id="amount" name="amount" value="1">
+                <button class="modal-amount-button modal-minus-button" type="button"></button>
                 <button class="modal-amount-button modal-plus-button" type="button"></button>
               </div>
             </div>
