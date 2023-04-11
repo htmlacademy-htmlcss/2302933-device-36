@@ -366,32 +366,36 @@
     </footer>
     <div class="modal-container">
       <div class="modal">
-        <button class="close-modal-button" type="button">
+        <button class="modal-close-button" type="button">
           <span class="visually-hidden">Закрыть модальное окно</span>
         </button>
-        <h2 class="modal-title">Доставка под заказ</h2>
+        <h2 class="modal-title title">Доставка под заказ</h2>
         <form class="modal-content" action="https://echo.htmlacademy.ru/" method="post">
           <div class="modal-content-top">
             <div class="modal-content-container">
-              <label class="modal-content-label">Ваше имя:</label>
-              <input class="modal-content-input modal-name-input" type="text" name="name" placeholder="Введите имя">
+              <label class="modal-content-label" for="name">Ваше имя:</label>
+              <input class="modal-content-input modal-name-input" type="text" id="name" name="name" placeholder="Введите имя">
             </div>
             <div class="modal-content-container">
-              <label class="modal-content-label">Ваш e-mail:</label>
-              <input class="modal-content-input modal-email-input" type="email" name="email" placeholder="Введите ваш e-mail">
+              <label class="modal-content-label" for="email">Ваш e-mail:</label>
+              <input class="modal-content-input modal-email-input" type="email" id="email" name="email" placeholder="Введите ваш e-mail">
             </div>
           </div>
           <div class="modal-content-bottom">
             <div class="modal-content-container">
-              <label class="modal-content-label">Что нужно привезти:</label>
-              <input class="modal-content-input modal-information-input" type="text" name="information" placeholder="В свободной форме">
+              <label class="modal-content-label" for="information">Что нужно привезти:</label>
+              <input class="modal-content-input modal-information-input" type="text" id="information" name="information" placeholder="В свободной форме">
             </div>
             <div class="modal-content-container">
-              <label class="modal-content-label">Количество:</label>
-              <input class="modal-content-input modal-amount-input" type="number" name="amount" value="">
+              <label class="modal-content-label" for="amount">Количество:</label>
+              <div class="modal-amount-container">
+                <button class="modal-amount-button modal-minus-button" type="button"></button>
+                <input class="modal-amount-input" type="number" id="amount" name="amount" value="1">
+                <button class="modal-amount-button modal-plus-button" type="button"></button>
+              </div>
             </div>
           </div>
-          <button class="link" type="submit">Отправить</button>
+          <button class="link modal-submit-button" type="submit">Отправить</button>
         </form>
       </div>
     </div>
