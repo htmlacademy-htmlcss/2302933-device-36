@@ -9,3 +9,16 @@ advantagesButtons.forEach((advantagesButton, index) => {
     advantages[index].classList.add('active');
   });
 });
+
+
+const modalOpen = document.querySelector('.advantages-delivery-button');
+const modalClose = document.querySelector('.modal-close-button');
+const modal = document.querySelector('.modal-container');
+
+modalOpen.addEventListener('click', () => {
+  modal.classList.remove('hidden');
+});
+
+modalClose.addEventListener('click', () => {
+  modal.classList.add('hidden');
+});

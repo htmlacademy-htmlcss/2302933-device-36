@@ -693,7 +693,9 @@ body {
   margin: 0;
 }
 
-.advantages-delivery-link {
+.advantages-delivery-button {
+  cursor: pointer;
+  width: 100%;
   position: relative;
   display: block;
   text-align: center;
@@ -704,12 +706,12 @@ body {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: #000000;
-  text-decoration: none;
   padding: 40px 0;
   background-color: #f0f0f0;
+  border: none;
 }
 
-.advantages-delivery-link::before {
+.advantages-delivery-button::before {
   content: "";
   position: absolute;
   left: 0;
@@ -722,7 +724,7 @@ body {
   background-repeat: no-repeat;
 }
 
-.advantages-delivery-link::after {
+.advantages-delivery-button::after {
   content: "";
   position: absolute;
   right: 42px;
@@ -738,19 +740,19 @@ body {
   background-color: rgba(180, 180, 180, 0.5);
 }
 
-.advantages-delivery-link:hover::before {
+.advantages-delivery-button:hover::before {
   background-color: #ffc700;
 }
 
-.advantages-delivery-link:hover::after {
+.advantages-delivery-button:hover::after {
   opacity: 1;
 }
 
-.advantages-delivery-link:active {
+.advantages-delivery-button:active {
   opacity: 0.3;
 }
 
-.advantages-delivery-link:focus-visible {
+.advantages-delivery-button:focus-visible {
   outline: 2px solid #af4fff;
   outline-offset: 2px;
 }
