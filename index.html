@@ -397,8 +397,25 @@
               </div>
               <div class="modal-amount-container">
                 <input class="modal-amount-input" type="number" id="amount" name="amount" value="1">
-                <button class="modal-amount-button modal-minus-button" type="button"></button>
-                <button class="modal-amount-button modal-plus-button" type="button"></button>
+                <button class="modal-amount-button modal-minus-button" type="button">
+                  <span class="visually-hidden">Уменьшить количество товаров</span>
+                  <svg class="modal-amount-button-icon" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 7H0V9H16V7Z"/>
+                  </svg>
+                </button>
+                <button class="modal-amount-button modal-plus-button" type="button">
+                  <span class="visually-hidden">Увеличить количество товаров</span>
+                  <svg class="modal-amount-button-icon" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_11521_3344)">
+                    <path d="M16 7H9V0H7V7H0V9H7V16H9V9H16V7Z"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_11521_3344">
+                    <rect width="16" height="16"/>
+                    </clipPath>
+                    </defs>
+                  </svg>
+                </button>
               </div>
             </div>
           </div>

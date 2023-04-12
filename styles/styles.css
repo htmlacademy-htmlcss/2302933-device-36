@@ -207,6 +207,21 @@ body {
   font-family: "Rubik", sans-serif;
   margin-left: -2px;
   cursor: pointer;
+  transition: background-color .2s, color .2s;
+}
+
+.search-button:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.search-button:active {
+  color:rgba(255, 255, 255, 0.3)
+}
+
+.search-button:disabled {
+  opacity: 0.3;
+  pointer-events: none;
 }
 
 .user-menu {
@@ -1826,18 +1841,43 @@ body {
   height: 100%;
   background-color: #f0f0f0;
   border: none;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .modal-plus-button {
   right: 0;
-  background-image: url("../images/icons/modal-plus.svg");
 }
 
 .modal-minus-button {
   left: 0;
-  background-image: url("../images/icons/modal-minus.svg");
+}
+
+.modal-amount-button-icon {
+  color: #000000;
+}
+
+.modal-amount-button:hover {
+  background-color: #ebebeb;
+}
+
+.modal-amount-button:hover  .modal-amount-button-icon {
+  opacity: 0.6;
+}
+
+.modal-amount-button:active {
+  background-color: #f0f0f0;
+}
+
+.modal-amount-button:active .modal-amount-button-icon {
+  opacity: 0.3;
+}
+
+.modal-amount-button:focus-visible {
+  outline: 2px solid #af4fff;
+}
+
+.modal-amount-button:disabled {
+  opacity: 0.1;
+  pointer-events: none;
 }
 
 .modal-amount-input {
