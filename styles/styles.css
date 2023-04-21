@@ -1098,6 +1098,11 @@ body {
   justify-content: center;
 }
 
+.socials-item:focus-within {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+}
+
 .socials-link {
   display: block;
   width: 40px;
@@ -1107,6 +1112,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   text-decoration: none;
+  outline: none;
 }
 
 .socials-link:hover {
