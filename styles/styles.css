@@ -549,16 +549,23 @@ body {
 }
 
 .slider-button {
+  background-color: #ffffff;
+  padding: 0;
+  border: none;
+}
+
+.slider-button::before {
+  content: "";
+  display: block;
   padding: 0;
   width: 12px;
   height: 12px;
   border: 2px solid #000000;
   border-radius: 50%;
-  background-color: #ffffff;
   cursor: pointer;
 }
 
-.slider-button.active {
+.slider-button.active::before {
   background-color: #000000;
 }
 
@@ -568,6 +575,15 @@ body {
 
 .slider-button:active {
   opacity: 0.3;
+}
+
+.slider-button:focus-visible {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+}
+
+.slider-button:disabled {
+  opacity: 0.1;
 }
 
 /* БЛОК КАТЕГОРИЙ */
