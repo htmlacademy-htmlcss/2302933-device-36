@@ -78,13 +78,9 @@ body {
 }
 
 .link {
-  position: relative;
-  padding: 10px 0;
   cursor: pointer;
-  width: 100%;
-  display: block;
+  display: inline-flex;
   text-decoration: none;
-  text-align: center;
   background-color: transparent;
   border: none;
   font-family: "Raleway", sans-serif;
@@ -94,10 +90,16 @@ body {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: #000000;
-  z-index: 1;
 }
 
-.link::before {
+.link-decorated {
+  position: relative;
+  padding: 10px 25px;
+  z-index: 1;
+  transition: background-color .3s ease, padding .3s ease, color .3s ease, flex-grow .3s ease;
+}
+
+.link-decorated::before {
   position: absolute;
   content: "";
   top: 0;
@@ -105,26 +107,26 @@ body {
   width: 100%;
   height: 100%;
   z-index: -1;
-  transform: scaleY(0.2);
+  transform: scaleY(0.2) translateZ(0);
   background-color: #ffe17f;
   transition: all .2s ease;
 }
 
-.link:hover::before {
+.link-decorated:hover::before {
   filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
-  transform: scaleY(1);
+  transform: scaleY(1) translateZ(0);
 }
 
-.link:active::before {
+.link-decorated:active::before {
   background-color: #ffcc33;
   filter: none;
 }
 
-.link:focus-visible {
+.link-decorated:focus-visible {
   outline: 2px solid #af4fff;
 }
 
-.link:disabled {
+.link-decorated:disabled {
   opacity: 0.3;
 }
 
@@ -511,7 +513,6 @@ body {
 }
 
 .slider-link {
-  max-width: 220px;
   margin-bottom: 50px;
 }
 
@@ -649,24 +650,36 @@ body {
   border-right: 7px solid #000000;
 }
 
+.advantages-buttons-item {
+  display: flex;
+}
+
 .advantages-buttons-item:not(:last-child) {
   margin-bottom: 35px;
 }
 
-.advantages-button {
-  max-width: 160px;
-}
-
-.advantages-button.active {
-  max-width: none;
-  padding-left: 20px;
-  text-align: left;
-  background-color: #000000;
+.advantages-button-active.link-decorated {
+  padding-left: 35px;
+  flex-grow: 1;
   color: #ffe17f;
 }
 
-.advantages-button.active::before {
-  content: none;
+.advantages-button-active.link-decorated::before {
+  transform: scaleY(1) translateZ(0);
+  background-color: #000000;
+}
+
+.advantages-button-active.link-decorated:hover::before {
+  filter: none;
+}
+
+.advantages-button-active.link-decorated:hover {
+  padding-left: 55px;
+}
+
+.advantages-button-active.link-decorated:focus-visible {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
 }
 
 .advantages-content-list {
@@ -832,10 +845,6 @@ body {
   background-color: #FFC700;
 }
 
-.about-us-link {
-  max-width: 270px;
-}
-
 .contacts {
   padding-top: 40px;
   position: relative;
@@ -873,10 +882,6 @@ body {
   list-style-type: none;
   margin: 0 0 30px 0;
   padding: 0;
-}
-
-.contacts-link {
-  max-width: 259px;
 }
 
 /* БЛОК ПОДПИСКИ */
@@ -1239,7 +1244,6 @@ body {
 .products-filter {
   min-width: 320px;
   padding: 25px 40px 25px 60px;
-  box-sizing: border-box;
 }
 
 .products-filter-main-title {
@@ -1783,6 +1787,7 @@ body {
 .modal-tooltip-container {
   position: relative;
   display: flex;
+  align-items: center;
   gap: 8px;
 }
 
