@@ -1426,11 +1426,10 @@ body {
   padding: 0;
   width: 30px;
   height: 30px;
-  background-image: url("../images/icons/sort.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  opacity: 0.2;
   cursor: pointer;
+  outline: none;
+  color:rgba(0, 0, 0, 0.2);
+  transition: color .2s;
 }
 
 .sort-down {
@@ -1438,11 +1437,16 @@ body {
 }
 
 .sort-button:hover {
-  opacity: 0.5;
+  color:rgba(0, 0, 0, 0.5);
 }
 
 .sort-button:active {
-  opacity: 1;
+  color: #000000;
+}
+
+.sort-button:focus-visible {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
 }
 
 .products-inner-container {
