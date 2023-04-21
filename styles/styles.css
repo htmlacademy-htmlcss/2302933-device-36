@@ -1300,9 +1300,6 @@ body {
   cursor: pointer;
   width: fit-content;
   transition: all .3s;
-}
-
-.control-text {
   font-size: 16px;
   line-height: 20px;
   color: #000000;
