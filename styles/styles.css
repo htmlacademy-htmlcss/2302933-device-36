@@ -199,6 +199,7 @@ body {
 }
 
 .search-button {
+  position: relative;
   border: 2px solid #000000;
   border-radius: 0 50px 50px 0;
   padding: 8px 54px;
@@ -209,7 +210,19 @@ body {
   font-family: "Rubik", sans-serif;
   margin-left: -2px;
   cursor: pointer;
+  outline: none;
   transition: background-color .2s, color .2s;
+}
+
+.search-button:focus-visible::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  outline: 2px solid #af4fff;
+  outline-offset: 4px;
 }
 
 .search-button:hover {
