@@ -1088,23 +1088,11 @@ body {
   text-transform: uppercase;
 }
 
-.footer-navigation-link::after {
-  position: absolute;
-  content: "";
-  background-color: #ffc700;
-  height: 2px;
-  left: 0;
-  right: 0;
-  bottom: -4px;
-  visibility: hidden;
-}
-
 .footer-navigation-link:hover  {
   color: #ffc700;
-}
-
-.footer-navigation-link:hover::after {
-  visibility: visible;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 7px;
 }
 
 .footer-navigation-link:active {
