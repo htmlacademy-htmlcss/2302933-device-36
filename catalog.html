@@ -99,6 +99,25 @@
             <h2 class="products-filter-main-title">фильтр:</h2>
             <fieldset class="products-filter-group">
               <legend class="products-fitler-title">Стоимость</legend>
+              <div class="range">
+                <div class="range-scale"></div>
+                <div class="range-container range-from" style="left: -12px;">
+                  <button class="range-toggle" type="button">
+                    <span class="visually-hidden">Изменить минимальную цену.</span>
+                  </button>
+                  <label>
+                    <input class="range-input-from range-input" type="text" name="range-input-from" value="" style="width: 30px;" placeholder="от 0">
+                  </label>
+                </div>
+                <div class="range-container range-to" style="right: 50px;">
+                  <button class="range-toggle" type="button">
+                    <span class="visually-hidden">Изменить максимальную цену.</span>
+                  </button>
+                  <label>
+                    <input class="range-input-to range-input" type="text" name="range-input-to" value="" style="width: 55px;" placeholder="до 5000">
+                  </label>
+                </div>
+              </div>
             </fieldset>
             <fieldset class="products-filter-group">
               <legend class="products-fitler-title">Цвет</legend>
@@ -201,7 +220,7 @@
             <div class="products-inner-container">
               <ul class="products-cards">
                 <li class="products-card">
-                  <a class="products-card-link" href="#">
+                  <a class="products-card-link new" href="#">
                     <img class="products-card-img" src="images/products-cards/product-1.jpg" alt="Любительская селфи-палка" width="360" height="380">
                     <div class="products-card-container">
                       <h3 class="products-card-title">Любительская селфи-палка</h3>

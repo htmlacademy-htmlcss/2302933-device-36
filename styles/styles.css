@@ -1297,8 +1297,7 @@ body {
   position: absolute;
   height: 2px;
   background-color: #000000;
-  left: 0;
-  right: 0;
+  width: 200px;
   top: -54px;
 }
 
@@ -1319,6 +1318,101 @@ body {
 
 .product-filter-item:not(:last-child) {
   margin-bottom: 17px;
+}
+
+.range {
+  position: relative;
+  width: 200px;
+  min-height: 43px;
+  z-index: 1;
+}
+
+.range-scale {
+  position: relative;
+  width: 100%;
+}
+
+.range-scale::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #dcdcdc;
+  z-index: -1;
+}
+
+.range-scale::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 0;
+  right: 81px;
+  height: 2px;
+  background-color: #000000;
+  z-index: -1;
+}
+
+.range-container {
+  top: 0;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.range-container label {
+  display: flex;
+}
+
+.range-container label:focus-within {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+}
+
+.range-input {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  font-family: "Rubik", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+  outline: none;
+}
+
+.range-input::placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.range-toggle {
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
+  padding: 0;
+  background-color: #ebebeb;
+  border: 2px solid #000000;
+  border-radius: 50%;
+  outline: none;
+  align-self: center;
+}
+
+.range-toggle:hover  {
+  border-color:rgba(0, 0, 0, 0.5);
+}
+
+.range-toggle:active {
+  background-color: #000000;
+}
+
+.range-toggle:focus-visible::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  outline: 2px solid #af4fff;
+  outline-offset: 4px;
 }
 
 .control {
@@ -1495,6 +1589,11 @@ body {
   display: block;
   text-decoration: none;
   color: #000000;
+}
+
+.products-card-link:focus-visible {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
 }
 
 .products-card-img {
