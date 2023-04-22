@@ -80,6 +80,7 @@ body {
 .link {
   cursor: pointer;
   display: inline-flex;
+  justify-content: center;
   text-decoration: none;
   background-color: transparent;
   border: none;
@@ -1483,6 +1484,10 @@ body {
 .control:focus-within .control-mark {
   outline: 2px solid #af4fff;
   outline-offset: 2px;
+}
+
+.product-filter-button {
+  width: 100%;
 }
 
 .sort {
