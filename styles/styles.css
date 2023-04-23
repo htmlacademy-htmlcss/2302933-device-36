@@ -740,8 +740,14 @@ body {
   margin-bottom: 35px;
 }
 
+.advantages-button {
+  padding: 15px;
+  min-width: 160px;
+  justify-content: center;
+}
+
 .advantages-button-active.link-decorated {
-  padding-left: 35px;
+  justify-content: flex-start;
   flex-grow: 1;
   color: #ffe17f;
 }
@@ -756,7 +762,7 @@ body {
 }
 
 .advantages-button-active.link-decorated:hover {
-  padding-left: 55px;
+  padding-left: 35px;
 }
 
 .advantages-button-active.link-decorated:focus-visible {
