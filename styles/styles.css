@@ -422,6 +422,7 @@ body {
 }
 
 .navigation-link {
+  position: relative;
   font-family: "Raleway",sans-serif;
   font-weight: 800;
   line-height: 21px;
@@ -430,6 +431,34 @@ body {
   color: #000000;
   text-decoration: none;
   display: block;
+  transition: opacity .3s ease;
+  z-index: 1;
+}
+
+.navigation-link-active {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 6px;
+}
+
+.navigation-link:hover,
+.navigation-link-active:hover {
+  opacity: 0.6;
+}
+
+.navigation-link:active,
+.navigation-link-active:active {
+  opacity: 0.3;
+}
+
+.navigation-link:focus-visible {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+}
+
+.navigation-link-active:focus-visible {
+  outline: 2px solid #af4fff;
+  outline-offset: 5px;
 }
 
 /* СЛАЙДЕР */
