@@ -508,7 +508,7 @@ body {
   color: #ffffff;
 }
 
-.slider-images {
+.slider-image-container {
   position: relative;
   margin-right: 40px;
   min-width: 560px;
@@ -519,11 +519,17 @@ body {
   top: -37px;
 }
 
-.slider-images-button {
+.slider-image-buttons {
+  position: absolute;
+  width: 100%;
+  top: 175px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider-image-button {
   cursor: pointer;
   padding: 0;
-  position: absolute;
-  z-index: 1;
   border: none;
   background-color: transparent;
   width: 20px;
@@ -534,33 +540,26 @@ body {
   transition: opacity .2s;
 }
 
-.slider-images-button:hover {
+.slider-image-button:hover {
   opacity: 0.6;
 }
 
-.slider-images-button:active {
+.slider-image-button:active {
   opacity: 0.4;
 }
 
-.slider-images-button:focus-visible {
+.slider-image-button:focus-visible {
   outline: 2px solid #af4fff;
   outline-offset: 2px;
 }
 
-.slider-images-button:disabled {
+.slider-image-button:disabled {
   opacity: 0.1;
   pointer-events: none;
 }
 
-.slider-images-next {
+.slider-image-next {
   transform: rotate(180deg);
-  right: 0;
-  top: 175px;
-}
-
-.slider-images-previous {
-  left: 30px;
-  top: 175px;
 }
 
 .slider-content {
@@ -1760,7 +1759,8 @@ body {
 }
 
 .products-card-link:hover.new::before{
-  opacity: 0.2;
+  border-color: #d3d3d3;
+  color: #d3d3d3;
 }
 
 .products-show-more {
@@ -1905,7 +1905,7 @@ body {
   line-height: 16px;
   letter-spacing: 0.2em;
   color: rgba(0, 0, 0, 0.6);
-  transition: opacity .3s ease;
+  transition: all .3s ease;
 }
 
 /* МОДАЛЬНОЕ ОКНО */
