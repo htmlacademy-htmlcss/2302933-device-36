@@ -541,6 +541,7 @@ body {
   top: 175px;
   display: flex;
   justify-content: space-between;
+  z-index: 1;
 }
 
 .slide-button {
