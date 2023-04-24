@@ -839,7 +839,7 @@ body {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: #000000;
-  padding: 40px 0;
+  padding: 40px 125px;
   background-color: #f0f0f0;
   border: none;
 }
@@ -1103,6 +1103,7 @@ body {
 }
 
 .subscription-text {
+  max-width: 300px;
   padding-left: 32px;
   background-image: url("../images/icons/correct-tick.svg");
   background-repeat: no-repeat;
@@ -1549,9 +1550,8 @@ body {
   content: "";
   position: absolute;
   background-color: #000000;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 6px;
+  left: 6px;
   width: 8px;
   height: 8px;
   border-radius: 50%;
@@ -1592,6 +1592,7 @@ body {
 }
 
 .sort-title {
+  max-width: 350px;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 16px;
@@ -1603,6 +1604,7 @@ body {
 }
 
 .sort-select {
+  max-width: 250px;
   padding-right: 32px;
   appearance: none;
   border: none;
@@ -1782,6 +1784,7 @@ body {
 }
 
 .products-show-more {
+  max-width: 760px;
   width: 100%;
   padding: 15px 0;
   text-align: center;
@@ -1816,6 +1819,7 @@ body {
 }
 
 .pagination {
+  max-width: 760px;
   display: flex;
   align-items: center;
   background-color: #ebebeb;
@@ -1823,6 +1827,7 @@ body {
 
 .pagination-previous,
 .pagination-next {
+  max-width: 200px;
   padding: 25px;
   background-color: transparent;
   font-family: "Raleway", sans-serif;
