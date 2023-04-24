@@ -347,17 +347,14 @@ body {
   display: block;
 }
 
+.cart:focus  + .popover {
+  display: block;
+}
+
 .page-header-bottom {
   position: relative;
   display: flex;
   justify-content: space-between;
-}
-
-.catalog-menu-container {
-  position: relative;
-  z-index: 3;
-  display: flex;
-  align-items: center;
 }
 
 .catalog-menu-title {
@@ -371,18 +368,26 @@ body {
 }
 
 .catalog-menu-button {
-  padding: 0;
-  width: 50px;
-  height: 50px;
+  position: relative;
+  padding: 15px 57px 15px 0;
   display: block;
-  border: 2px solid #000000;
+  border: none;
   background-color: transparent;
-  border-radius: 50%;
-  background-position: center;
-  background-repeat: no-repeat;
-  opacity: 0.3;
   cursor: pointer;
   background-image: url("../images/icons/catalog-plus.svg");
+  background-position: right center;
+  background-repeat: no-repeat;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  z-index: 2;
+}
+
+.catalog-menu-button:focus-visible {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
 }
 
 .catalog-menu-list {
@@ -396,7 +401,7 @@ body {
   top: 30px;
   left: -60px;
   right: -60px;
-  z-index: 2;
+  z-index: 1;
   flex-direction: column;
   flex-wrap: wrap;
 }
@@ -409,16 +414,14 @@ body {
   text-decoration: none;
 }
 
-.catalog-menu-container:hover ~ .catalog-menu-list {
+.catalog-menu:hover .catalog-menu-list,
+.catalog-menu:focus-within .catalog-menu-list {
   display: flex;
 }
 
-.catalog-menu-container:hover .catalog-menu-button {
+.catalog-menu:hover .catalog-menu-button,
+.catalog-menu:focus-within .catalog-menu-button {
   background-image: url("../images/icons/catalog-minus.svg");
-}
-
-.catalog-menu-container:focus-within .catalog-menu-list {
-  display: flex;
 }
 
 .navigation {
