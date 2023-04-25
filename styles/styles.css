@@ -791,16 +791,15 @@ body {
 
 .advantages-container {
   padding-top: 12px;
-  display: flex;
+  display: grid;
+  grid-template-columns: 287px 1fr;
   margin-bottom: 142px;
 }
 
 .advantages-buttons {
   list-style-type: none;
-  margin: 0 auto 0 0;
+  margin: 0;
   padding: 63px 0;
-  width: 287px;
-  box-sizing: border-box;
   border-right: 7px solid #000000;
 }
 
@@ -948,15 +947,16 @@ body {
 /* БЛОК КОНТАКТНОЙ ИНФОРМАЦИИ */
 
 .sections-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 108px;
   margin-bottom: 70px;
 }
 
-.about-us {
+.about-us,
+.contacts {
   position: relative;
   padding-top: 40px;
-  margin-right: auto;
-  max-width: 520px;
 }
 
 .about-us::before,
@@ -1003,12 +1003,6 @@ body {
   height: 8px;
   border-radius: 50%;
   background-color: #FFC700;
-}
-
-.contacts {
-  padding-top: 40px;
-  position: relative;
-  max-width: 532px;
 }
 
 .contacts-title {
