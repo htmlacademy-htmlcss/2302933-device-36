@@ -1,3 +1,5 @@
+// БЛОК ПРЕИМУЩЕСТВ
+
 const advantages = document.querySelectorAll('.advantages-content-item');
 const advantagesButtons = document.querySelectorAll('.advantages-button');
 

@@ -44,6 +44,8 @@ html {
 
 body {
   margin: 0;
+  display: flex;
+  flex-direction: column;
   min-height: 100%;
   font-family: "Rubik", sans-serif;
   font-size: 18px;
@@ -133,6 +135,10 @@ body {
   margin: 0 auto;
 }
 
+.page-main {
+  flex-grow: 1;
+}
+
 /* ШАПКА */
 
 .page-header {
@@ -178,6 +184,7 @@ body {
 
 .search-label {
   flex-grow: 1;
+  display: flex;
 }
 
 .search-label:focus-within {
@@ -376,7 +383,7 @@ body {
 
 .catalog-menu-button {
   position: relative;
-  padding: 15px 57px 15px 0;
+  padding: 15px 65px 15px 0;
   display: block;
   border: none;
   background-color: transparent;
@@ -387,6 +394,7 @@ body {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   z-index: 3;
+  max-width: 300px;
 }
 
 .catalog-menu-button::after {
@@ -785,7 +793,7 @@ body {
 /* БЛОК ПРЕИМУЩЕСТВ */
 
 .advantages {
-  margin-bottom: 70px;
+  margin-bottom: 67px;
   background: linear-gradient(#ffffff 114px, #f0f0f0 114px, #f0f0f0 403px, #ffffff 403px);
 }
 
@@ -848,7 +856,7 @@ body {
 }
 
 .advantages-content-item {
-  padding: 72px 305px 72px 100px;
+  padding: 72px 260px 72px 115px;
   background-repeat: no-repeat;
   background-position: right 28px center;
   display: none;
@@ -876,7 +884,7 @@ body {
 }
 
 .advantages-description {
-  max-width: 460px;
+  max-width: 480px;
   margin: 0;
 }
 
@@ -949,14 +957,14 @@ body {
 .sections-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 108px;
+  gap: 95px;
   margin-bottom: 70px;
 }
 
 .about-us,
 .contacts {
   position: relative;
-  padding-top: 40px;
+  padding-top: 48px;
 }
 
 .about-us::before,
@@ -964,6 +972,7 @@ body {
   content: "";
   position: absolute;
   top: 0;
+  left: 0;
   width: 84px;
   height: 7px;
   background-color: #000000;
@@ -990,14 +999,13 @@ body {
   color: #000000;
   letter-spacing: -0.02em;
   margin-bottom: 19px;
-  padding-left: 34px;
+  padding-left: 37px;
 }
 
 .about-us-item::before {
   position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  left: 3px;
+  top: 5px;
   content: "";
   width: 8px;
   height: 8px;
@@ -1154,7 +1162,6 @@ body {
 }
 
 .subscription-text {
-  max-width: 300px;
   padding-left: 32px;
   background-image: url("../images/icons/correct-tick.svg");
   background-repeat: no-repeat;
@@ -1170,7 +1177,6 @@ body {
 .footer-container {
   padding: 62px 0 77px;
   display: flex;
-  align-items: flex-end;
   flex-wrap: wrap;
 }
 
@@ -1203,7 +1209,8 @@ body {
 }
 
 .footer-middle-column {
-  margin: 0 auto -10px;
+  margin: 0 auto -14px 118px;
+  padding-top: 75px;
 }
 
 .footer-navigation-list {
@@ -1214,7 +1221,7 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 35px;
+  gap: 30px;
   align-items: center;
 }
 
@@ -1305,7 +1312,8 @@ body {
   display: flex;
   flex-direction: column;
   gap: 63px;
-  margin-bottom: -10px;
+  margin-bottom: -19px;
+  padding-top: 75px;
 }
 
 .footer-phone {
@@ -1806,7 +1814,7 @@ body {
   font-size: 18px;
   letter-spacing: -0.02em;
   color: #000000;
-  max-width: 200px;
+  max-width: 210px;
 }
 
 .product-card-price {
@@ -1919,9 +1927,11 @@ body {
 
 .pagination-list {
   display: flex;
+  flex-wrap: wrap;
   list-style-type: none;
   margin: 0 auto;
   padding: 0;
+  max-width: 300px;
 }
 
 .pagination-link {
