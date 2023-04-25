@@ -22,8 +22,10 @@
       </a>
       <div class="page-header-top">
         <form class="search-form" method="get" action="#">
-          <label class="visually-hidden" for="search-input">Поиск по сайту</label>
-          <input class="search-input" type="text" name="search-input" id="search-input" placeholder="Поиск по сайту">
+          <label class="search-label">
+            <span class="visually-hidden">Поиск по сайту.</span>
+            <input class="search-input" type="text" name="search-input" placeholder="Поиск по сайту">
+          </label>
           <button class="search-button" type="submit">Найти</button>
         </form>
         <ul class="user-menu">
@@ -36,23 +38,27 @@
           <li class="user-menu-item">
             <a class="user-menu-link compare" href="#">Сравнить</a>
           </li>
-          <li class="user-menu-item">
+          <li class="user-menu-item cart-item">
             <button class="user-menu-link cart" type="button" data-counter="2">Корзина</button>
             <div class="popover">
               <ul class="popover-list">
                 <li class="popover-item">
                   <a class="popover-item-link" href="#">
-                    <img class="popover-item-img" src="./images/products-cards/product-1-small.jpg" alt="Любительская селфи-палка" width="39" height="43">
+                    <img class="popover-item-img" src="./images/products-cards/product-1-small.jpg" alt="Любительская селфи-палка." width="39" height="43">
                     <span class="popover-item-title">Любительская селфи-палка</span>
                   </a>
-                  <button class="popover-item-button" type="button"></button>
+                  <button class="popover-item-button" type="button">
+                    <span class="visually-hidden">Удалить продукт из корзины.</span>
+                  </button>
                 </li>
                 <li class="popover-item">
                   <a class="popover-item-link" href="#">
-                    <img class="popover-item-img" src="./images/products-cards/product-2-small.jpg" alt="Профессиональная селфи-палка" width="39" height="43">
+                    <img class="popover-item-img" src="./images/products-cards/product-2-small.jpg" alt="Профессиональная селфи-палка." width="39" height="43">
                     <span class="popover-item-title">Профессиональная селфи-палка</span>
                   </a>
-                  <button class="popover-item-button" type="button"></button>
+                  <button class="popover-item-button" type="button">
+                    <span class="visually-hidden">Удалить продукт из корзины.</span>
+                  </button>
                 </li>
               </ul>
               <div class="popover-bottom">
@@ -69,26 +75,20 @@
       <div class="page-header-bottom">
         <div class="catalog-menu">
           <button class="catalog-menu-button" type="button">Каталог товаров</button>
-          <ul class="catalog-menu-list">
-            <li class="catalog-menu-item">
+          <div class="catalog-menu-list">
+            <div class="catalog-menu-container">
               <a class="catalog-menu-link" href="#">Виртуальная реальность</a>
-            </li>
-            <li class="catalog-menu-item">
               <a class="catalog-menu-link" href="catalog.html">Моноподы для cелфи</a>
-            </li>
-            <li class="catalog-menu-item">
               <a class="catalog-menu-link" href="#">Экшн-камеры</a>
-            </li>
-            <li class="catalog-menu-item">
+            </div>
+            <div class="catalog-menu-container">
               <a class="catalog-menu-link" href="#">Фитнес-браслеты</a>
-            </li>
-            <li class="catalog-menu-item">
               <a class="catalog-menu-link" href="#">Умные часы</a>
-            </li>
-            <li class="catalog-menu-item">
+            </div>
+            <div class="catalog-menu-container">
               <a class="catalog-menu-link" href="#">Квадрокоптеры</a>
-            </li>
-          </ul>
+            </div>
+          </div>
         </div>
         <nav class="navigation">
           <ul class="navigation-list">
@@ -195,7 +195,7 @@
           <li class="category-item">
             <a class="category-item-link" href="#">
               <div class="category-item-container">
-                <img class="category-item-img" src="./images/category/virtual-reality.svg" alt="Виртуальная реальность" width="97" height="55">
+                <img class="category-item-img" src="./images/category/virtual-reality.svg" alt="Виртуальная реальность." width="97" height="55">
               </div>
               <h3 class="category-item-title">Виртуальная реальность</h3>
             </a>
@@ -203,7 +203,7 @@
           <li class="category-item">
             <a class="category-item-link" href="catalog.html">
               <div class="category-item-container">
-                <img class="category-item-img category-item-img-bottom" src="./images/category/monopods.svg" alt="Моноподы для селфи" width="87" height="117">
+                <img class="category-item-img category-item-img-bottom" src="./images/category/monopods.svg" alt="Моноподы для селфи." width="87" height="117">
               </div>
               <h3 class="category-item-title">Моноподы для селфи</h3>
             </a>
@@ -211,7 +211,7 @@
           <li class="category-item">
             <a class="category-item-link" href="#">
               <div class="category-item-container">
-                <img class="category-item-img" src="./images/category/action-camera.svg" alt="Экшн-камеры" width="72" height="87">
+                <img class="category-item-img" src="./images/category/action-camera.svg" alt="Экшн-камеры." width="72" height="87">
               </div>
               <h3 class="category-item-title">Экшн-камеры</h3>
             </a>
@@ -219,7 +219,7 @@
           <li class="category-item">
             <a class="category-item-link" href="#">
               <div class="category-item-container">
-                <img class="category-item-img" src="./images/category/fitness.svg" alt="Фитнес-браслеты" width="108" height="66">
+                <img class="category-item-img" src="./images/category/fitness.svg" alt="Фитнес-браслеты." width="108" height="66">
               </div>
               <h3 class="category-item-title">Фитнес-браслеты</h3>
             </a>
@@ -227,7 +227,7 @@
           <li class="category-item">
             <a class="category-item-link" href="#">
               <div class="category-item-container">
-                <img class="category-item-img" src="./images/category/smart-watch.svg" alt="Умные часы" width="57" height="98">
+                <img class="category-item-img" src="./images/category/smart-watch.svg" alt="Умные часы." width="57" height="98">
               </div>
               <h3 class="category-item-title">Умные часы</h3>
             </a>
@@ -235,7 +235,7 @@
           <li class="category-item">
             <a class="category-item-link" href="#">
               <div class="category-item-container">
-                <img class="category-item-img" src="./images/category/quadcopters.svg" alt="Квадрокоптеры" width="133" height="70">
+                <img class="category-item-img" src="./images/category/quadcopters.svg" alt="Квадрокоптеры." width="133" height="70">
               </div>
               <h3 class="category-item-title">Квадрокоптеры</h3>
             </a>
@@ -271,7 +271,7 @@
           </ul>
         </div>
         <div class="advantages-delivery page-container">
-          <button class="advantages-delivery-button" type="button">Доставим редкий товар под заказ</a>
+          <button class="advantages-delivery-button" type="button">Доставим редкий товар под заказ</button>
         </div>
       </section>
       <div class="sections-container page-container">
@@ -310,7 +310,7 @@
           </div>
           <div class="subscription-bottom">
             <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
-              <label class="visually-hidden" for="subscription-input">Подписка на рассылку</label>
+              <label class="visually-hidden" for="subscription-input">Подписка на рассылку.</label>
               <input class="subscription-input" type="email" name="subscription-input" id="subscription-input" placeholder="Ваш e-mail" required>
               <button class="subscription-button" type="submit">Подписаться</button>
             </form>
@@ -344,17 +344,17 @@
           <ul class="socials">
             <li class="socials-item">
               <a class="socials-link social-link-telegram" href="https://t.me/htmlacademy">
-                <span class="visually-hidden">Мы в телеграмме</span>
+                <span class="visually-hidden">Мы в телеграмме.</span>
               </a>
             </li>
             <li class="socials-item">
               <a class="socials-link social-link-youtube" href="https://www.youtube.com/user/htmlacademyru">
-                <span class="visually-hidden">Мы на ютубе</span>
+                <span class="visually-hidden">Мы на ютубе.</span>
               </a>
             </li>
             <li class="socials-item">
               <a class="socials-link social-link-twitter" href="https://twitter.com/htmlacademy_ru">
-                <span class="visually-hidden">Мы в твитере</span>
+                <span class="visually-hidden">Мы в твитере.</span>
               </a>
             </li>
           </ul>
@@ -362,7 +362,7 @@
         <div class="footer-right-column">
           <a class="footer-phone" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
           <a class="company-link" href="htmlacademy.ru">
-            <span class="visually-hidden">главная страница htmlacademy</span>
+            <span class="visually-hidden">Главная страница htmlacademy.</span>
             <svg aria-hidden="true" focusable="false" width="115" height="33" viewBox="0 0 115 33" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
               <path d="M0 12.9V15.5H2.5V12.9H0Z"/>
               <path d="M11.6 4.5C10 4.5 8.8 5.2 8 6.2H7.9V0H5.9V15.5H7.9V10.2C7.9 8.1 9.2 6.6 11.2 6.6C13 6.6 14.1 8 14.1 9.8V15.5H16.1V9.4C16.2 6.4 14.3 4.5 11.6 4.5Z"/>
@@ -415,13 +415,13 @@
               <div class="modal-amount-container">
                 <input class="modal-amount-input" type="number" id="amount" name="amount" value="1">
                 <button class="modal-amount-button modal-minus-button" type="button">
-                  <span class="visually-hidden">Уменьшить количество товаров</span>
+                  <span class="visually-hidden">Уменьшить количество товаров.</span>
                   <svg class="modal-amount-button-icon" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                     <path d="M16 7H0V9H16V7Z"/>
                   </svg>
                 </button>
                 <button class="modal-amount-button modal-plus-button" type="button">
-                  <span class="visually-hidden">Увеличить количество товаров</span>
+                  <span class="visually-hidden">Увеличить количество товаров.</span>
                   <svg class="modal-amount-button-icon" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_11521_3344)">
                     <path d="M16 7H9V0H7V7H0V9H7V16H9V9H16V7Z"/>
