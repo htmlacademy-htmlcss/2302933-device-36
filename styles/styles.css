@@ -45,8 +45,6 @@ html {
 body {
   margin: 0;
   min-height: 100%;
-  min-width: 1160px;
-
   font-family: "Rubik", sans-serif;
   font-size: 18px;
   line-height: 30px;
@@ -1085,15 +1083,14 @@ body {
 }
 
 .subscription-bottom {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 160px;
+  gap: 188px;
   align-items: center;
 }
 
 .subscription-form {
   display: flex;
-  width: 810px;
-  box-sizing: border-box;
 }
 
 .subscription-input {
@@ -1102,7 +1099,6 @@ body {
   border: none;
   border-bottom: 3px solid #c4c4c4;
   background-color: transparent;
-
   font-family: "Rubik", sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -1122,6 +1118,10 @@ body {
 
 .subscription-input:disabled {
   opacity: 0.3;
+}
+
+.subscription-form.is-invalid .subscription-input {
+  border-color: #ff3d3d;
 }
 
 .subscription-button {
@@ -1146,7 +1146,7 @@ body {
 }
 
 .subscription-button:active {
-  opacity: 0.3;
+  color:rgba(255, 255, 255, 0.3);
 }
 
 .subscription-button:focus-visible {
@@ -1241,6 +1241,7 @@ body {
   text-decoration: underline;
   text-decoration-thickness: 2px;
   text-underline-offset: 7px;
+  transition: opacity .3s ease;
 }
 
 .footer-navigation-link:active {
@@ -1317,6 +1318,7 @@ body {
   color: #ffffff;
   font-size: 16px;
   line-height: 20px;
+  transition: color .3s ease, opacity .3s ease;
 }
 
 .footer-phone:hover {
@@ -1336,6 +1338,7 @@ body {
   color: #ffc700;
   text-decoration: none;
   align-self: flex-end;
+  transition: color .3s ease, opacity .3s ease;
 }
 
 .company-link:hover {
@@ -2004,7 +2007,7 @@ body {
 .modal {
   width: 920px;
   position: relative;
-  padding: 72px 80px;
+  padding: 62px 70px;
   margin: auto;
   border: 10px solid #000000;
   box-shadow: 0 10px 0 rgba(0, 0, 0, 0.1);
@@ -2013,12 +2016,13 @@ body {
 
 .modal-title {
   margin-bottom: 42px;
+  padding-right: 40px;
 }
 
 .modal-close-button {
   position: absolute;
-  top: 84px;
-  right: 80px;
+  top: 74px;
+  right: 70px;
   border: none;
   padding: 0;
   background-color: transparent;
@@ -2045,7 +2049,8 @@ body {
 }
 
 .modal-content-top {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 40px;
   margin-bottom: 42px;
 }
@@ -2053,17 +2058,10 @@ body {
 .modal-content-container {
   position: relative;
   padding-bottom: 22px;
-  max-width: 360px;
-  flex-grow: 1;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   gap: 14px;
-}
-
-.modal-content-information {
-  width: 100%;
-  max-width: 540px;
 }
 
 .modal-content-label {
@@ -2108,6 +2106,7 @@ body {
 
 .modal-content-input:disabled {
   opacity: 0.3;
+  pointer-events: none;
 }
 
 .modal-content-input::placeholder {
@@ -2115,7 +2114,8 @@ body {
 }
 
 .modal-content-bottom {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 180px;
   gap: 40px;
   margin-bottom: 20px;
 }
@@ -2267,15 +2267,22 @@ body {
   outline-offset: 0;
 }
 
+.modal-content-container.is-invalid .modal-input-message {
+  display: block;
+}
+
+.modal-content-container.is-invalid .modal-amount-input {
+  outline: 2px solid #ff3d3d;
+  outline-offset: 0;
+}
+
 .modal-input-message {
   position: absolute;
   bottom: 0;
   left: 0;
   font-size: 14px;
   line-height: 20px;
-}
-
-.modal-input-message.is-invalid {
+  display: none;
   color: #ff3d3d;
 }
 

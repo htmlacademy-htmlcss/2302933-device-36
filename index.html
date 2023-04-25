@@ -309,6 +309,7 @@
             <p class="subscription-description">Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
           </div>
           <div class="subscription-bottom">
+            <!-- Чтобы посмотреть input с ошибкой нужно добавить к элементу с классом "subscription-form" класс "is-invalid" -->
             <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
               <label class="visually-hidden" for="subscription-input">Подписка на рассылку.</label>
               <input class="subscription-input" type="email" name="subscription-input" id="subscription-input" placeholder="Ваш e-mail" required>
@@ -389,18 +390,20 @@
         <h2 class="modal-title title">Доставка под заказ</h2>
         <form class="modal-content" action="https://echo.htmlacademy.ru/" method="post">
           <div class="modal-content-top">
+            <!-- Чтобы посмотреть input с ошибкой нужно добавить к элементу с классом "modal-content-container" класс "is-invalid" -->
             <div class="modal-content-container">
               <label class="modal-content-label" for="name">Ваше имя:</label>
               <input class="modal-content-input modal-name-input" type="text" id="name" name="name" placeholder="Введите имя" required>
+              <span class="modal-input-message">Добавьте имя</span>
             </div>
             <div class="modal-content-container">
               <label class="modal-content-label" for="email">Ваш e-mail:</label>
               <input class="modal-content-input modal-email-input" type="email" id="email" name="email" placeholder="Введите ваш e-mail" required>
-              <span class="modal-input-message is-invalid hidden">Забавный у вас адрес</span>
+              <span class="modal-input-message">Забавный у вас адрес</span>
             </div>
           </div>
           <div class="modal-content-bottom">
-            <div class="modal-content-container modal-content-information">
+            <div class="modal-content-container">
               <label class="modal-content-label" for="information">Что нужно привезти:</label>
               <input class="modal-content-input modal-information-input" type="text" id="information" name="information" placeholder="В свободной форме">
             </div>
