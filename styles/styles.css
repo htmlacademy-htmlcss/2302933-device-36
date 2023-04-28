@@ -128,6 +128,7 @@ body {
 
 .link-decorated:disabled {
   opacity: 0.3;
+  pointer-events: none;
 }
 
 .page-container {
@@ -383,8 +384,7 @@ body {
 
 .catalog-menu-button {
   position: relative;
-  padding: 15px 65px 15px 0;
-  display: block;
+  padding: 15px 60px 15px 0;
   border: none;
   background-color: transparent;
   cursor: pointer;
@@ -393,14 +393,14 @@ body {
   line-height: 21px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  z-index: 3;
   max-width: 300px;
 }
 
 .catalog-menu-button::after {
   content: "";
   position: absolute;
-  top: 0;
+  top: 50%;
+  transform: translateY(-50%);
   right: 0;
   width: 50px;
   height: 50px;
@@ -427,13 +427,13 @@ body {
 }
 
 .catalog-menu-list {
-  padding: 33px 60px 48px 60px;
+  padding: 13px 60px 48px 60px;
   flex-wrap: wrap;
   gap: 50px;
   display: none;
   background-color: #ffe17f;
   position: absolute;
-  top: 30px;
+  top: 100%;
   left: -60px;
   right: -60px;
   z-index: 2;
@@ -497,7 +497,7 @@ body {
 
   display: flex;
   flex-wrap: wrap;
-  gap: 45px;
+  gap: 20px 43px;
 }
 
 .navigation-link {
@@ -511,7 +511,6 @@ body {
   text-decoration: none;
   display: block;
   transition: opacity .3s ease;
-  z-index: 2;
 }
 
 .navigation-link-active {
@@ -730,6 +729,7 @@ body {
 
 .slide-pagination-button:disabled {
   opacity: 0.1;
+  pointer-events: none;
 }
 
 /* БЛОК КАТЕГОРИЙ */
@@ -1878,6 +1878,7 @@ body {
 
 .products-show-more:disabled {
   opacity: 0.3;
+  pointer-events: none;
 }
 
 .pagination {
@@ -2431,6 +2432,7 @@ body {
 
 .popover-link:disabled {
   color:rgba(0, 0, 0, 0.3);
+  pointer-events: none;
 }
 
 .hidden {
