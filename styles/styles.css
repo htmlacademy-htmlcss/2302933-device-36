@@ -266,7 +266,7 @@ body {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 28px 23px;
+  gap: 28px 0;
   min-width: 497px;
   max-width: 500px;
 }
@@ -298,6 +298,10 @@ body {
   outline-offset: 2px;
 }
 
+.logout-item {
+  margin: 0 25px 0 30px;
+}
+
 .logout {
   background-color: transparent;
   border: none;
@@ -318,14 +322,20 @@ body {
 }
 
 .login-item {
-  margin-right: auto;
+  margin-right: 65px;
 }
 
 .login {
+  padding-left: 28px;
   background-image: url("../images/icons/login.svg");
 }
 
+.compare-item {
+  margin-right: 21px;
+}
+
 .compare {
+  padding-left: 20px;
   background-image: url("../images/icons/compare.svg");
 }
 
@@ -336,7 +346,7 @@ body {
   font-family: "Rubik", sans-serif;
   font-size: 18px;
   line-height: 30px;
-  padding-left: 45px;
+  padding-left: 40px;
   cursor: pointer;
 
   background-image: url("../images/icons/cart.svg");
@@ -384,7 +394,7 @@ body {
 
 .catalog-menu-button {
   position: relative;
-  padding: 15px 60px 15px 0;
+  padding: 15px 67px 15px 0;
   border: none;
   background-color: transparent;
   cursor: pointer;
@@ -427,9 +437,9 @@ body {
 }
 
 .catalog-menu-list {
-  padding: 13px 60px 48px 60px;
+  padding: 13px 60px 57px 60px;
   flex-wrap: wrap;
-  gap: 50px;
+  gap: 60px;
   display: none;
   background-color: #ffe17f;
   position: absolute;
@@ -442,7 +452,7 @@ body {
 .catalog-menu-container {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 15px;
 }
 
 .catalog-menu-link {
@@ -657,6 +667,8 @@ body {
 }
 
 .slide-link {
+  min-width: 220px;
+  justify-content: center;
   margin-bottom: 50px;
 }
 
