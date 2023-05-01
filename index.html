@@ -24,7 +24,7 @@
         <form class="search-form" method="get" action="#">
           <label class="search-label">
             <span class="visually-hidden">Поиск по сайту.</span>
-            <input class="search-input" type="text" name="search-input" placeholder="Поиск по сайту">
+            <input class="search-input" type="text" name="search-input" placeholder="Поиск по сайту" required>
           </label>
           <button class="search-button" type="submit">Найти</button>
         </form>
@@ -32,10 +32,10 @@
           <li class="user-menu-item login-item">
             <a class="user-menu-link login" href="#">Войти</a>
           </li>
-          <li class="user-menu-item">
+          <li class="user-menu-item logout-item">
             <button class="user-menu-link logout invisible" type="button">Выйти</button>
           </li>
-          <li class="user-menu-item">
+          <li class="user-menu-item compare-item">
             <a class="user-menu-link compare" href="#">Сравнить</a>
           </li>
           <li class="user-menu-item cart-item">
@@ -405,7 +405,7 @@
           <div class="modal-content-bottom">
             <div class="modal-content-container">
               <label class="modal-content-label" for="information">Что нужно привезти:</label>
-              <input class="modal-content-input modal-information-input" type="text" id="information" name="information" placeholder="В свободной форме">
+              <input class="modal-content-input modal-information-input" type="text" id="information" name="information" placeholder="В свободной форме" required>
             </div>
             <div class="modal-content-container">
               <div class="modal-tooltip-container">
@@ -416,7 +416,7 @@
                 </div>
               </div>
               <div class="modal-amount-container">
-                <input class="modal-amount-input" type="number" id="amount" name="amount" value="1">
+                <input class="modal-amount-input" type="number" id="amount" name="amount" value="1" required>
                 <button class="modal-amount-button modal-minus-button" type="button">
                   <span class="visually-hidden">Уменьшить количество товаров.</span>
                   <svg class="modal-amount-button-icon" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">

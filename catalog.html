@@ -24,7 +24,7 @@
         <form class="search-form" method="get" action="#">
           <label class="search-label">
             <span class="visually-hidden">Поиск по сайту.</span>
-            <input class="search-input" type="text" name="search-input" placeholder="Поиск по сайту">
+            <input class="search-input" type="text" name="search-input" placeholder="Поиск по сайту" required>
           </label>
           <button class="search-button" type="submit">Найти</button>
         </form>
@@ -32,10 +32,10 @@
           <li class="user-menu-item">
             <a class="user-menu-link login" href="#">Коля Петухов</a>
           </li>
-          <li class="user-menu-item">
+          <li class="user-menu-item logout-item">
             <button class="user-menu-link logout" type="button">Выйти</button>
           </li>
-          <li class="user-menu-item">
+          <li class="user-menu-item compare-item">
             <a class="user-menu-link compare" href="#">Сравнить</a>
           </li>
           <li class="user-menu-item cart-item">
@@ -133,7 +133,7 @@
                     <span class="visually-hidden">Изменить минимальную цену.</span>
                   </button>
                   <label>
-                    <input class="range-input-from range-input" type="text" name="range-input-from" value="" style="width: 30px;" placeholder="от 0">
+                    <input class="range-input-from range-input" type="text" name="range-input-from" value="" style="width: 30px;" placeholder="от 0"  required>
                   </label>
                 </div>
                 <div class="range-container range-to" style="right: 50px;">
@@ -141,7 +141,7 @@
                     <span class="visually-hidden">Изменить максимальную цену.</span>
                   </button>
                   <label>
-                    <input class="range-input-to range-input" type="text" name="range-input-to" value="" style="width: 55px;" placeholder="до 5000">
+                    <input class="range-input-to range-input" type="text" name="range-input-to" value="" style="width: 55px;" placeholder="до 5000" required>
                   </label>
                 </div>
               </div>
